@@ -1,0 +1,4 @@
+[submodule "OllamaSharp"]
+	path = OllamaSharp
+	url = git@github.com:awaescher/OllamaSharp.git
+	branch = main
