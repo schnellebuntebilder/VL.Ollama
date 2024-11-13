@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="GC8z1JXhkXjMAdxKeBRCn6" LanguageVersion="2024.6.7-0235-g5172ef47fd" Version="0.128">
+  <NugetDependency Id="DvlEjDdQ3sPL7Fn0q0s3ck" Location="VL.CoreLib" Version="2024.6.7-0235-g5172ef47fd" />
+  <Patch Id="L5srcNfREgwPQW1NnzcExI">
+    <Canvas Id="EujIE7Y2JThMOcNVTzuF6J" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="LeRX9sZANyuQWJ31WCfPfa">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="ICwmMcBc38zL3ArL0nvDHS">
+        <Canvas Id="CY841QjNKdZLflxqSSz6N6" CanvasType="Group">
+          <Node Bounds="589,1639,75,19" Id="JPTWRkTQM4VOT8vLzN76re">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.IO" LastDependency="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImageReader" />
+            </p:NodeReference>
+            <Pin Id="J4RMORPG5VsN5EMmHtA9nQ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ROLFHRb7gcBLaswDD9nHon" Name="Filename" Kind="InputPin" DefaultValue="C:\Users\seblh\Desktop\Bonn.jpg" />
+            <Pin Id="VjLLNFl3QJoONfVUIeaIS6" Name="Load" Kind="InputPin" />
+            <Pin Id="Cna5nqb2j0kNqVttiR1gJM" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="TJrS96c0pe9LPgH7X46V7s" Comment="Message" Bounds="718,1956,268,33" ShowValueBox="true" isIOBox="true" Value="transcribe the name in the image. answer as short as possible, ideally just the name. leave punctuation away.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="K0mG0zWQXvMPg3JH9qRfHP" Comment="" Bounds="438,1657,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NsvJ9UDhhmpLaT0ZoAC3x6" Comment="" Bounds="450,1578,173,15" ShowValueBox="true" isIOBox="true" Value="thorsten.png">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="436,1703,73,137" Id="FJpmAt10To0NXV8GnffqyY">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+            </p:NodeReference>
+            <Pin Id="RYJjI6h565RNMd80CAQIVj" Name="Force" Kind="InputPin" />
+            <Pin Id="ETkrzWPBwEmQCHLZO7PQTz" Name="Dispose Cached Outputs" Kind="InputPin" />
+            <Pin Id="CQs2z1P1xEiPyz6Du0tfWF" Name="Has Changed" Kind="OutputPin" />
+            <ControlPoint Id="O3OZ6sxauYBLH8QDVCLhWb" Bounds="450,1709" Alignment="Top" />
+            <Patch Id="BrlAkNwEOkcOumf4gAg0Bx" ManuallySortedPins="true">
+              <Patch Id="UMEQu9YrNQxLN7mUnaQLIn" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="Up6TfupYzuBNP0GI0xmxce" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="448,1741,49,19" Id="PRWWJQiO57xOeUJNWk5VHK">
+                <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.Ollama_simple.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="base64" />
+                </p:NodeReference>
+                <Pin Id="JM3t3Ru2zRONsw2DXupCVb" Name="Input" Kind="InputPin" />
+                <Pin Id="HhDP3cnNmkzL9eA9NQLQvQ" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="GKXUbmDbsA4OPrFaLC0ak1" Bounds="450,1834" Alignment="Bottom" />
+          </Node>
+          <Pad Id="Ad46teG7rvqP1UJCQYcaDt" Comment="Load" Bounds="661,1613,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JaRmiK4sB1MOkORnKF94RX" Comment="" Bounds="591,1697,109,139" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="1366,676,65,19" Id="LbM9iszCjRAQXAhSC9qBBC">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.Ollama_simple.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessNode" Name="ListModels" />
+            </p:NodeReference>
+            <Pin Id="CvfMguktewdOA4VV3xeVkk" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="L0xzYSAmqrpNoP35lxl8jH" Name="Start" Kind="InputPin" />
+            <Pin Id="E9YCoXASIGlLoKETL3pYD3" Name="Value" Kind="OutputPin" />
+            <Pin Id="RUtOQrS3wWpNN5gD7e4DSy" Name="Cancel" Kind="InputPin" IsHidden="true" />
+            <Pin Id="U5skRqlyh95MzXqaC2Yfob" Name="Is Running" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="U651L4hsckvQDepitAAahr" Name="Duration" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="CHJsO1qwHI0NCGXjnerNXd" Comment="" Bounds="1368,728,219,202" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VEIuA2KCUNELjaVheHuXwm" Comment="Start" Bounds="1368,630,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="234,659,60,19" Id="IQhfunHKhvjPr7jRzspfod">
+            <p:NodeReference LastCategoryFullName="Ollama" LastDependency="VL.Ollama.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PullModel" />
+            </p:NodeReference>
+            <Pin Id="Br1Ad0WVe7QQEF3E0ttZoS" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IwwlhyF8mHGOLg5DuHnl1G" Name="Model" Kind="InputPin" />
+            <Pin Id="FATkqDgMIOLM2Pw1SsDO7p" Name="Result" Kind="OutputPin" />
+            <Pin Id="LWeY6kRSAPoPY8ubhTzuLx" Name="Start" Kind="InputPin" />
+            <Pin Id="RNiVZyGmZVcP4ttimb7kbX" Name="Cancel" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KAi0p1rVA8TMQRB2v1XujC" Name="streaming response" Kind="OutputPin" />
+            <Pin Id="UyuV9XYFwqcN7i2BKWLVZK" Name="Is Running" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="InrSDN6tkNzPdN943C9Z9O" Name="Duration" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="FCKKCx9hgryNS0OaNSykpi" Comment="Start" Bounds="291,613,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ClIZaQ1dvVIOS0CtGgkiGi" Comment="" Bounds="236,757,190,203" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">12</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Oi2uARhIhtzO9tYsA0PYgP" Comment="Model" Bounds="486,510,109,15" ShowValueBox="true" isIOBox="true" Value="gemma2:2b">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="G1MqZ01v7LbM6XUrgpjiMo" Comment="Message" Bounds="426,1942,198,45" ShowValueBox="true" isIOBox="true" Value="transcribe the name in the image. Tell me a little story packed with funfacts about this name.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="373,2097,105,19" Id="J60LV7f2YiEPFsKRMLntpv">
+            <p:NodeReference LastCategoryFullName="Ollama.Chat" LastDependency="VL.Ollama.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Send" />
+            </p:NodeReference>
+            <Pin Id="KrTyaIHHlpJO4yjIhbqEXU" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Nihv5tt82eiPQZDASK8qxn" Name="System Prompt" Kind="InputPin" />
+            <Pin Id="LPkfUFPBqDZLXOeMCqkf5G" Name="Model" Kind="InputPin" />
+            <Pin Id="I7jcMvG8UFmM7YJe8Qhd5h" Name="Message" Kind="InputPin" />
+            <Pin Id="RyCjmVZF5r4QaZTmG1JwXv" Name="Result" Kind="OutputPin" />
+            <Pin Id="C98yLl31u8jQY7y6BAsLMw" Name="image" Kind="InputPin" />
+            <Pin Id="G8h1G2RRdQpPhFFL6mIIUv" Name="Start" Kind="InputPin" />
+            <Pin Id="PSI2AT4BmfWPw7jlm2zz8N" Name="Cancel" Kind="InputPin" DefaultValue="False" IsHidden="true" />
+            <Pin Id="FaOtSnckFKJOuocSALUcmR" Name="streaming response" Kind="OutputPin" />
+            <Pin Id="EVGc1DQkIzKMR975jwzxaw" Name="Is Running" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="OI2iuzdte64MTRJvBWHGOG" Name="Duration" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="OSqcz3b6o1RMofGXbJ8qV8" Comment="response" Bounds="375,2403,446,196" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ch8HiDmF9OZNemnaRARIGx" Comment="Start" Bounds="475,2026,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="H1rWk84MwDwMu1avhkfvUh" Comment="streaming response" Bounds="291,696,214,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="689,660,73,19" Id="CZSEx8QdetKMxgltd62VyG">
+            <p:NodeReference LastCategoryFullName="Ollama.Model" LastDependency="VL.Ollama.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DeleteModel" />
+            </p:NodeReference>
+            <Pin Id="VXr9UcCs1C7MnfJBzDSIe8" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QK6p3dcjq3KOwBdtI2t6Js" Name="Model" Kind="InputPin" />
+            <Pin Id="Bijiws9bm6nLa46y319cBJ" Name="Done" Kind="OutputPin" />
+            <Pin Id="AtXFQ1yeKdHL2Ml0sGH2jm" Name="Start" Kind="InputPin" />
+            <Pin Id="RO88igqfaTiPTQgPK4O001" Name="Cancel" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TE7rjlJfGcpQTsuvzMBfG3" Name="Is Running" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="UqpEprDurg5OciN7st89Am" Name="Duration" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="KcW9l3aijJZLp1QrfiKuKO" Comment="Start" Bounds="759,616,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OGiebQ7hCcTNQqQmgeimZb" Comment="Done" Bounds="691,710,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OOkxDlxGWByMwNSqneWNAd" Bounds="1495,173,111,111" ShowValueBox="true" isIOBox="true" Value="⚙">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">54</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="RajhFwtpJHtO0u6o0H1Cj0" Name="Manage Models" Bounds="177,466,1921,789" />
+          <Pad Id="DNl84fnTI6rMZj7G1LFG3v" Comment="streaming response" Bounds="475,2143,438,225" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HKOYg4QDZtcN7q6XFtyGUg" Comment="Model" Bounds="400,1905,80,15" ShowValueBox="true" isIOBox="true" Value="llama3.2-vision">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="1771,716,82,19" Id="T62DNPXONJBMjLpf0x3I1f">
+            <p:NodeReference LastCategoryFullName="OllamaSharp.OllamaApiClient" LastDependency="OllamaSharp.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="OllamaApiClient" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SelectedModel" />
+            </p:NodeReference>
+            <Pin Id="ARPt3PqpMijLX0iklyGcic" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Q85vTeHQfu3PQM6okoTVDM" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="AVd6L06NDX4PMi2t9hTpGc" Name="Selected Model" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CbhyGCkq0BNOtxLPqf5QD3" Comment="Selected Model" Bounds="1850,758,80,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="891,665,93,19" Id="S8S8usLThPKPyOJH2BPvJ1">
+            <p:NodeReference LastCategoryFullName="Ollama.Model" LastDependency="VL.Ollama.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ShowInformation" />
+            </p:NodeReference>
+            <Pin Id="F5Q5sg2DfQkPXx9qQHcbGL" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KzzpVwOpbfCLRWHX7nP6Ft" Name="Model" Kind="InputPin" />
+            <Pin Id="BBqKAy5PKeFQbRVeuI0hsy" Name="Start" Kind="InputPin" />
+            <Pin Id="PXe1lq6D8R0Nr3PVrI6Ucp" Name="Result" Kind="OutputPin" />
+            <Pin Id="N8gxfUyYS5QLJbDsGfL71h" Name="Is Running" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="N2nrGJOz7d0OZ3M5dvQGTa" Name="Duration" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="BQJ1LfcJFWBOT6Gza9OTXp" Name="Cancel" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="KYJjbQNfcPXMSXjfNR4zDX" Comment="Start" Bounds="981,623,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Cu8IAr2eGdeOArSeZhpAA4" Comment="" Bounds="893,715,416,499" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SFkhj3QVsHuOSZKKEtlTYq" Comment="Model" Bounds="893,558,112,15" ShowValueBox="true" isIOBox="true" Value="llama3.2-vision">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="231,334,78,19" Id="MJNdFw2coBsMJypO8Y5VvE">
+            <p:NodeReference LastCategoryFullName="Ollama" LastDependency="VL.Ollama.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="OllamaConfig" />
+            </p:NodeReference>
+            <Pin Id="FTNpxDbdifRNVjiNGzrUs9" Name="Force New Instance" Kind="InputPin" />
+            <Pin Id="Mldog3EY1wxQHvppuyTo1C" Name="Uri String" Kind="InputPin" />
+            <Pin Id="DRVPnTIfZObNdw3hzIWEzp" Name="Default Model" Kind="InputPin" />
+            <Pin Id="HNTvHlYE9R1OfKoWj81r25" Name="client" Kind="OutputPin" />
+          </Node>
+          <Pad Id="UNaNr4T3jhML8JCDmEGNFK" Comment="Force New Instance" Bounds="233,234,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Qatc0VbNlERMKSJq9vYgQV" Comment="Uri String" Bounds="270,273,113,15" ShowValueBox="true" isIOBox="true" Value="http://localhost:11434">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="R2rudjSBkTgPH5sw5du1NT" Comment="Default Model" Bounds="306,306,80,15" ShowValueBox="true" isIOBox="true" Value="llama3.2-vision">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Overlay Id="CaAVqj7YjdpOmxaGiBU1SC" Name="Configuration" Bounds="179,153,1448,239">
+            <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+          </Overlay>
+          <Node Bounds="1771,663,78,19" Id="CsLmmC9HNuSM5iy0xQtY12">
+            <p:NodeReference LastCategoryFullName="Ollama" LastDependency="VL.Ollama.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="OllamaConfig" />
+            </p:NodeReference>
+            <Pin Id="OX7StMypV3CPUVF1dUbAlJ" Name="Force New Instance" Kind="InputPin" />
+            <Pin Id="CnRJryFx6bMQK8BTY7fFdF" Name="Uri String" Kind="InputPin" />
+            <Pin Id="KUdUefu6m1iL7WctzrxhYn" Name="Default Model" Kind="InputPin" />
+            <Pin Id="AN6bz5c13AtQSwi9gxuU4Z" Name="client" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="T0xVaLPDzQiLj6XlK56JVi" Name="Create" ParticipatingElements="CDKLvm7JhcOO0UvvoBQodv" />
+        <Patch Id="TpScSvZU9HLNvKhf54aONK" Name="Update" />
+        <ProcessDefinition Id="LCsiDmRXOXpMR2R5bGL4pF">
+          <Fragment Id="VwNXbHC0usDPEQZ85RCtel" Patch="T0xVaLPDzQiLj6XlK56JVi" Enabled="true" />
+          <Fragment Id="DeB4vXhVydrLvF1oeqA15z" Patch="TpScSvZU9HLNvKhf54aONK" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="DNwKEGpp9gTPLtvlEtM6kH" Ids="K0mG0zWQXvMPg3JH9qRfHP,RYJjI6h565RNMd80CAQIVj" />
+        <Link Id="A0XJpkKVCALPZjqhfNz8by" Ids="Ad46teG7rvqP1UJCQYcaDt,VjLLNFl3QJoONfVUIeaIS6" />
+        <Link Id="VAo2QJQLQKPNJgFGmjqQtK" Ids="NsvJ9UDhhmpLaT0ZoAC3x6,ROLFHRb7gcBLaswDD9nHon" />
+        <Link Id="Gu0ndXfXOYvN4RTd4Aq6Dc" Ids="Cna5nqb2j0kNqVttiR1gJM,JaRmiK4sB1MOkORnKF94RX" />
+        <Link Id="SfDRwyxXdFEMFDvPSdqIu0" Ids="NsvJ9UDhhmpLaT0ZoAC3x6,O3OZ6sxauYBLH8QDVCLhWb" />
+        <Link Id="JgB5PmJ3ei1PcRNXZSvSgu" Ids="O3OZ6sxauYBLH8QDVCLhWb,JM3t3Ru2zRONsw2DXupCVb" />
+        <Link Id="MMr3KtIBu83M7jPyDzjTti" Ids="E9YCoXASIGlLoKETL3pYD3,CHJsO1qwHI0NCGXjnerNXd" />
+        <Link Id="VARRGVwqMpdQWlLHvAlFgR" Ids="VEIuA2KCUNELjaVheHuXwm,L0xzYSAmqrpNoP35lxl8jH" />
+        <Link Id="Ur3ZIH9Y5j1QKt6g0vxz2G" Ids="FCKKCx9hgryNS0OaNSykpi,LWeY6kRSAPoPY8ubhTzuLx" />
+        <Link Id="QILncs7amHWLXsAKHIvQeC" Ids="FATkqDgMIOLM2Pw1SsDO7p,ClIZaQ1dvVIOS0CtGgkiGi" />
+        <Link Id="R8zWM5NJyloLTeOe3LwNZt" Ids="Oi2uARhIhtzO9tYsA0PYgP,IwwlhyF8mHGOLg5DuHnl1G" />
+        <Link Id="TuSnwD0aM75QKcBE54FwLM" Ids="HhDP3cnNmkzL9eA9NQLQvQ,GKXUbmDbsA4OPrFaLC0ak1" />
+        <Link Id="CAV2SkaExENO5Rv9rg424j" Ids="GKXUbmDbsA4OPrFaLC0ak1,C98yLl31u8jQY7y6BAsLMw" />
+        <Link Id="UIsf1JtP1i5LatrYvPE9A7" Ids="RyCjmVZF5r4QaZTmG1JwXv,OSqcz3b6o1RMofGXbJ8qV8" />
+        <Link Id="OuTM0UlFrMQO65bgaN8vUu" Ids="Ch8HiDmF9OZNemnaRARIGx,G8h1G2RRdQpPhFFL6mIIUv" />
+        <Link Id="HY4WirQL7nmMkmgSVzyfHs" Ids="KAi0p1rVA8TMQRB2v1XujC,H1rWk84MwDwMu1avhkfvUh" />
+        <Link Id="DuvLQu5M67pNkDE1dIEsnn" Ids="KcW9l3aijJZLp1QrfiKuKO,AtXFQ1yeKdHL2Ml0sGH2jm" />
+        <Link Id="SKQ3it2vcOpMFGSvJUK15i" Ids="Oi2uARhIhtzO9tYsA0PYgP,QK6p3dcjq3KOwBdtI2t6Js" />
+        <Link Id="Ka36NDkiVL8PkMaVIEvZQG" Ids="Bijiws9bm6nLa46y319cBJ,OGiebQ7hCcTNQqQmgeimZb" />
+        <Link Id="MwYioEq33hBNcpUreW9fXz" Ids="FaOtSnckFKJOuocSALUcmR,DNl84fnTI6rMZj7G1LFG3v" />
+        <Link Id="PguBGDTRfSrP7NqtmH582x" Ids="HKOYg4QDZtcN7q6XFtyGUg,LPkfUFPBqDZLXOeMCqkf5G" />
+        <Link Id="DnuF4BJSuuIODldEQQ0eFw" Ids="G1MqZ01v7LbM6XUrgpjiMo,I7jcMvG8UFmM7YJe8Qhd5h" />
+        <Link Id="Sc3nH34EO7GNWeuoXwCPE1" Ids="AVd6L06NDX4PMi2t9hTpGc,CbhyGCkq0BNOtxLPqf5QD3" />
+        <Link Id="SzOeeAzIdFtP6mURABlMZ5" Ids="KYJjbQNfcPXMSXjfNR4zDX,BBqKAy5PKeFQbRVeuI0hsy" />
+        <Link Id="OwlE2CSIprSQau93uZLhSt" Ids="PXe1lq6D8R0Nr3PVrI6Ucp,Cu8IAr2eGdeOArSeZhpAA4" />
+        <Link Id="OHqr17EdVuTLj7DN2y504K" Ids="SFkhj3QVsHuOSZKKEtlTYq,KzzpVwOpbfCLRWHX7nP6Ft" />
+        <Link Id="CDKLvm7JhcOO0UvvoBQodv" Ids="UNaNr4T3jhML8JCDmEGNFK,FTNpxDbdifRNVjiNGzrUs9" />
+        <Link Id="Hq76zeloV9jMlxNebPAfnx" Ids="Qatc0VbNlERMKSJq9vYgQV,Mldog3EY1wxQHvppuyTo1C" />
+        <Link Id="A0s3yDxtoSGQSm47vBimoH" Ids="R2rudjSBkTgPH5sw5du1NT,DRVPnTIfZObNdw3hzIWEzp" />
+        <Link Id="DddzLcrRb9mLqWpJDG3eNR" Ids="AN6bz5c13AtQSwi9gxuU4Z,ARPt3PqpMijLX0iklyGcic" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="Ec2pvvPv5bJNXHD6HdM8oI" Location="../VL.Ollama.vl" />
+  <NugetDependency Id="K0WPAhjTJAqQW43UrTFe3a" Location="OllamaSharp" Version="4.0.6" />
+  <NugetDependency Id="P4mLnbjI7fNPArg1sodvxX" Location="VL.Skia" Version="2024.6.7-0235-g5172ef47fd" />
+</Document>
