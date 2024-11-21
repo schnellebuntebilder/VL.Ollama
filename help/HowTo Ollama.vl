@@ -129,7 +129,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="335,1662,105,19" Id="J60LV7f2YiEPFsKRMLntpv">
+          <Node Bounds="335,1962,105,19" Id="J60LV7f2YiEPFsKRMLntpv">
             <p:NodeReference LastCategoryFullName="Ollama.Chat" LastDependency="VL.Ollama.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SendAsync" />
@@ -145,8 +145,8 @@
             <Pin Id="EVGc1DQkIzKMR975jwzxaw" Name="Is Running" Kind="OutputPin" />
             <Pin Id="OI2iuzdte64MTRJvBWHGOG" Name="Duration" Kind="OutputPin" />
           </Node>
-          <Pad Id="OSqcz3b6o1RMofGXbJ8qV8" Comment="response" Bounds="337,2126,521,350" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Ch8HiDmF9OZNemnaRARIGx" Comment="Start" Bounds="437,1621,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="OSqcz3b6o1RMofGXbJ8qV8" Comment="response" Bounds="337,2255,521,350" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ch8HiDmF9OZNemnaRARIGx" Comment="Start" Bounds="437,1921,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -191,8 +191,8 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="RajhFwtpJHtO0u6o0H1Cj0" Name="Manage Models" Bounds="176,481,2119,789" />
-          <Pad Id="DNl84fnTI6rMZj7G1LFG3v" Comment="streaming response" Bounds="370,1768,604,326" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="HKOYg4QDZtcN7q6XFtyGUg" Comment="Model" Bounds="393,1395,80,15" ShowValueBox="true" isIOBox="true" Value="llama3.2:1b">
+          <Pad Id="DNl84fnTI6rMZj7G1LFG3v" Comment="streaming response" Bounds="370,2068,546,141" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HKOYg4QDZtcN7q6XFtyGUg" Comment="Model" Bounds="665,1579,80,15" ShowValueBox="true" isIOBox="true" Value="llama3.2:1b">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -316,7 +316,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="ULgskAygyWSPWpRstV1Itm" Name="Chat" Bounds="175,1325,914,1206" />
-          <Pad Id="GnjCfTvOFmnN5PL9EihJd3" Bounds="1072,103,518,29" ShowValueBox="true" isIOBox="true" Value="https://github.com/ollama/ollama/blob/main/docs/gpu.md">
+          <Pad Id="GnjCfTvOFmnN5PL9EihJd3" Bounds="175,109,518,29" ShowValueBox="true" isIOBox="true" Value="https://github.com/ollama/ollama/blob/main/docs/gpu.md">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -325,7 +325,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PnSREVhczeiPfOSdl7oqrU" Bounds="1072,76,118,19" ShowValueBox="true" isIOBox="true" Value="GPU support table:">
+          <Pad Id="PnSREVhczeiPfOSdl7oqrU" Bounds="175,82,118,19" ShowValueBox="true" isIOBox="true" Value="GPU support table:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -355,9 +355,9 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="FGdXo04DT4HPB1RRWuFhmx" Comment="" Bounds="1864,726,264,223" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Qft57n3yxqSMgcuexvMN3u" Comment="Is Running" Bounds="404,1729,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="PJekKHhlsImMjMRizWvVC9" Comment="Duration" Bounds="437,1698,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QDtnkUlZJbWPWATqEnI8Ao" Comment="Message" Bounds="249,2940,276,43" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="Qft57n3yxqSMgcuexvMN3u" Comment="Is Running" Bounds="404,2029,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PJekKHhlsImMjMRizWvVC9" Comment="Duration" Bounds="437,1998,43,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QDtnkUlZJbWPWATqEnI8Ao" Comment="Message" Bounds="249,2940,276,43" ShowValueBox="true" isIOBox="true" Value="message ina boooootle">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -391,7 +391,7 @@
           <Pad Id="LLhgXFlqOUSNIqJqRX7OjU" Comment="streaming response" Bounds="232,3101,432,67" ShowValueBox="true" isIOBox="true" />
           <Pad Id="F1BuH30Lns2MJDG4l0HIAy" Comment="Is Running" Bounds="266,3062,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="IaUAYSzrGGcOIG71Pgjw2E" Comment="Duration" Bounds="299,3031,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="335,1423,61,19" Id="JZFiPdHDoE0OIEC0dVPuXm">
+          <Node Bounds="335,1607,497,19" Id="JZFiPdHDoE0OIEC0dVPuXm">
             <p:NodeReference LastCategoryFullName="Ollama.Chat" LastDependency="VL.Ollama.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Chat" />
@@ -402,8 +402,9 @@
             <Pin Id="TLOuTpiWsjGO8OK0schhW1" Name="Model" Kind="InputPin" />
             <Pin Id="EARR9YUqN3XMnXEuLA1C1t" Name="Output" Kind="OutputPin" />
             <Pin Id="VZfk7IjuwAMQDfXRpSfGgV" Name="Messages" Kind="OutputPin" />
+            <Pin Id="MEOBfGTYQIhM5ZdvsyuFIh" Name="Messages" Kind="InputPin" />
           </Node>
-          <Pad Id="JWiHiLb2DfWLIG86HJtatT" Comment="Make New One" Bounds="337,1351,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+          <Pad Id="JWiHiLb2DfWLIG86HJtatT" Comment="Make New One" Bounds="337,1405,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -465,7 +466,7 @@
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
-          <Overlay Id="AQlEpXnYSQNOtBlll7kNqa" Name="Generate" Bounds="175,2600,1242,1268" />
+          <Overlay Id="AQlEpXnYSQNOtBlll7kNqa" Name="Generate" Bounds="175,2600,1242,753" />
           <Node Bounds="512,2723,187,104" Id="Qaa3pINidJlNEGF7jJWejL">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -526,7 +527,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UvWc1NT7tGsOdWiFZejbjQ" Bounds="504,2847,199,43" ShowValueBox="true" isIOBox="true" Value="hm, in theory, one could 'save' a conversation/context here">
+          <Pad Id="UvWc1NT7tGsOdWiFZejbjQ" Bounds="504,2847,226,69" ShowValueBox="true" isIOBox="true" Value="hm, in theory, one could 'save' a conversation/context here, but there's never data...">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -535,13 +536,13 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="AogyTh55uhkOXlTQ6DhM0T" Comment="Messages" Bounds="393,1470,624,99" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NsQaZem8o8iP004Khezn1C" Comment="Message" Bounds="371,1594,169,15" ShowValueBox="true" isIOBox="true" Value="how old is the universe?">
+          <Pad Id="AogyTh55uhkOXlTQ6DhM0T" Comment="Messages" Bounds="435,1640,593,191" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NsQaZem8o8iP004Khezn1C" Comment="Message" Bounds="371,1894,152,15" ShowValueBox="true" isIOBox="true" Value="Do you know my name?">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="T6fXKocDUV6OY5abYFmju0" Comment="Model" Bounds="235,583,109,15" ShowValueBox="true" isIOBox="true" Value="llama3.2:1b">
+          <Pad Id="T6fXKocDUV6OY5abYFmju0" Comment="Model" Bounds="235,583,180,15" ShowValueBox="true" isIOBox="true" Value="llama3.2:1b-instruct-fp16">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -551,7 +552,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1190,1573,61,19" Id="ApgPdcbRlNlNqdFWaMqTTQ">
+          <Node Bounds="1190,1573,65,19" Id="ApgPdcbRlNlNqdFWaMqTTQ">
             <p:NodeReference LastCategoryFullName="Ollama.Chat" LastDependency="VL.Ollama.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Chat" />
@@ -562,6 +563,7 @@
             <Pin Id="BW77uiqvCSAOQ4VemjyWWO" Name="Model" Kind="InputPin" />
             <Pin Id="Ty6IFw1kgmqNYMZZsVAzRi" Name="Output" Kind="OutputPin" />
             <Pin Id="D0HoMxsi9TxLrb1CsvMib6" Name="Messages" Kind="OutputPin" />
+            <Pin Id="FJzkCwNLFFFMDzgTjCxTc7" Name="Messages" Kind="InputPin" />
           </Node>
           <Pad Id="D96tPEdT9JwOFCUmb12r9Y" Comment="Make New One" Bounds="1193,1501,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -641,6 +643,77 @@
               <p:fontsize p:Type="Int32">4</p:fontsize>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="MfVOXYX9iKELVIN8HQx3xm" Comment="Model" Bounds="1048,590,180,15" ShowValueBox="true" isIOBox="true" Value="llama3.2:1b-instruct-fp16">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="815,1448,89,110" Id="VJ7ggejlRTcMAmv8KyZnmG">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+            </p:NodeReference>
+            <Pin Id="FK0KaUvDgUSM8voNzUIvgt" Name="Force" Kind="InputPin" />
+            <Pin Id="Lku7zSfN9snL5ui5EniZ4b" Name="Dispose Cached Outputs" Kind="InputPin" />
+            <Pin Id="Q6JDwFl3053NJVVCtSGwDa" Name="Has Changed" Kind="OutputPin" />
+            <Patch Id="M5kAYkZIxHJPCAizxhmEcc" ManuallySortedPins="true">
+              <Patch Id="O3Ruamb1gtXNYvD5bo74C6" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="DS5ieHuDylhQUtNl6aHUPx" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="827,1511,65,26" Id="IvzX4Bi8GzvNg4XHsHapxP">
+                <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <FullNameCategoryReference ID="Collections.Sequence" />
+                  <Choice Kind="OperationCallFlag" Name="FromValue" />
+                </p:NodeReference>
+                <Pin Id="J4yRGG1R97GNZ1BmNpOZY3" Name="Input" Kind="InputPin" />
+                <Pin Id="Q4l6daublPROGD0OLd4bVo" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="827,1471,47,26" Id="G6ie6GONWTgPTMrclgLdq8">
+                <p:NodeReference LastCategoryFullName="Ollama.Message" LastDependency="VL.Ollama.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="Message" />
+                  <CategoryReference Kind="ClassType" Name="Message" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="Category" Name="Ollama" NeedsToBeDirectParent="true" />
+                  </CategoryReference>
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                </p:NodeReference>
+                <Pin Id="DdVOLp2tKOlOAHGvFN7i5R" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="Abz9Z7Czo4qQCElt4t853m" Name="Role" Kind="InputPin" />
+                <Pin Id="UTjkrQKB8tUL502ndFpJZU" Name="Content" Kind="InputPin" />
+                <Pin Id="LxL4KmuVrbSPqLFgueunkc" Name="Images" Kind="InputPin" />
+                <Pin Id="CdJDip0F3alNILnOsGVs3K" Name="Output" Kind="StateOutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="TX0TVijVr8EOOvpLMHBkOP" Bounds="829,1454" Alignment="Top" />
+            <ControlPoint Id="VmEWpZohXqpNEf7esRWlwt" Bounds="850,1454" Alignment="Top" />
+            <ControlPoint Id="DOvZCXFARTBMTtOvF4nEkT" Bounds="829,1552" Alignment="Bottom" />
+            <ControlPoint Id="P5ialed5DoCNO4KvOOqCLZ" Bounds="871,1454" Alignment="Top" />
+          </Node>
+          <Node Bounds="827,1356,48,26" Id="GkPXQuujHfgN5L4CxB8gLi">
+            <p:NodeReference LastCategoryFullName="Ollama.ChatRole" LastDependency="VL.Ollama.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="Ollama.ChatRole" />
+              <Choice Kind="OperationCallFlag" Name="User" />
+            </p:NodeReference>
+            <Pin Id="K0z83I3cGotQAfwdehEDAK" Name="User" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EktOJYP3H0VNMS6NXd7NJu" Comment="Content" Bounds="850,1393,112,15" ShowValueBox="true" isIOBox="true" Value="My name is Horst.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="DFWp5e7tEk6MVPIp90w9T9" Comment="Images" Bounds="871,1415,109,34" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Path" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:Value />
+          </Pad>
         </Canvas>
         <Patch Id="T0xVaLPDzQiLj6XlK56JVi" Name="Create" ParticipatingElements="CDKLvm7JhcOO0UvvoBQodv" />
         <Patch Id="TpScSvZU9HLNvKhf54aONK" Name="Update" />
@@ -681,7 +754,6 @@
         <Link Id="IUJJvK6Ig7gNTOT4PIO05n" Ids="VOTuYjqCyZ6LULtfvWQdwb,F1BuH30Lns2MJDG4l0HIAy" />
         <Link Id="CYFcRiD7k7cNFT7fd1i4AJ" Ids="HGWatBEjHowPh6x3p1EZoZ,IaUAYSzrGGcOIG71Pgjw2E" />
         <Link Id="BMAGNGn2MT9L4zleSpxM9L" Ids="EARR9YUqN3XMnXEuLA1C1t,K36MnvRzLkIQE3P33guPP9" />
-        <Link Id="URcVdbU9cMxOYI0kcMOaUQ" Ids="HKOYg4QDZtcN7q6XFtyGUg,TLOuTpiWsjGO8OK0schhW1" />
         <Link Id="ORE88gMU92cNMrrVH7PL1X" Ids="JWiHiLb2DfWLIG86HJtatT,C31vU2X7hi1M6PANbAyNmn" />
         <Link Id="SSE9BeZHanaQZg8RVE3soQ" Ids="QDtnkUlZJbWPWATqEnI8Ao,EKpTeZCW4pnNgb5Y2udiiW" />
         <Link Id="Nh1bGHaEi2KNzNZLuFQXWn" Ids="AS9SR8l0d7SQaQJhRCAbhU,KDqDG6yy6EQPqihzNYAyvw" />
@@ -714,10 +786,21 @@
         <Link Id="I8w8gGcIIJ8OappRJETOq5" Ids="GKXUbmDbsA4OPrFaLC0ak1,VdF2mR7Wvl0OuMYp2q5eEr" />
         <Link Id="U2tK3Xjc9loLP5HufwMYyU" Ids="TJrS96c0pe9LPgH7X46V7s,S9VR8VJ4AXFPOb6dw6ASIq" />
         <Link Id="G2AB751AqqLLLPXFXxssKA" Ids="AJqCazlom75K94uvEuKrz0,QK6p3dcjq3KOwBdtI2t6Js" />
-        <Link Id="LenamrmqR48Ock8GZzNNLc" Ids="Hj1eEXeZ2hzLJY8FD4h16M,KzzpVwOpbfCLRWHX7nP6Ft" />
         <Link Id="OWV4I7IJ3KtMcRUp3tHzrr" Ids="E2ZfElPOMsLQUFCu0IHrCC,JBR9QPNIqBtP9ifw6tfe5D" />
         <Link Id="ERE6QLs9lyaNYrZOeMkK0C" Ids="Ia5CV0lcoGBOJRb3lXp3Ri,FurogEc1wcvOy7azwFULTe" />
         <Link Id="RiO0eFjXHYJOGByZdEypT7" Ids="H2aXKcw06KZOy7vMnYujpv,Hw4AJttOtGkNgGHU04iR3J" />
+        <Link Id="Tka9fRrmOOLLn4JwfoJura" Ids="MfVOXYX9iKELVIN8HQx3xm,KzzpVwOpbfCLRWHX7nP6Ft" />
+        <Link Id="KofiaHPLyyzOPUfXVjwJhc" Ids="HKOYg4QDZtcN7q6XFtyGUg,TLOuTpiWsjGO8OK0schhW1" />
+        <Link Id="HTWmAJr4qPsORHCPTv6Jli" Ids="K0z83I3cGotQAfwdehEDAK,TX0TVijVr8EOOvpLMHBkOP" />
+        <Link Id="TUvKZvjmHkVOH1Dgvt1Nqa" Ids="EktOJYP3H0VNMS6NXd7NJu,VmEWpZohXqpNEf7esRWlwt" />
+        <Link Id="Lpw0U7nEikQNv7kPwKCVOh" Ids="DOvZCXFARTBMTtOvF4nEkT,MEOBfGTYQIhM5ZdvsyuFIh" />
+        <Link Id="FviDJUuqGR9OF0IPXfZ1b7" Ids="JWiHiLb2DfWLIG86HJtatT,FK0KaUvDgUSM8voNzUIvgt" />
+        <Link Id="DhACN5jYzceOQyRd4GC68x" Ids="Q4l6daublPROGD0OLd4bVo,DOvZCXFARTBMTtOvF4nEkT" />
+        <Link Id="PiBQSzLYZ9UNVnvIihYOtC" Ids="TX0TVijVr8EOOvpLMHBkOP,Abz9Z7Czo4qQCElt4t853m" />
+        <Link Id="KVsiQ7MUBKQLwbYhm96uhI" Ids="CdJDip0F3alNILnOsGVs3K,J4yRGG1R97GNZ1BmNpOZY3" />
+        <Link Id="Q6OBFlbwVTDQd7XotfjBWr" Ids="VmEWpZohXqpNEf7esRWlwt,UTjkrQKB8tUL502ndFpJZU" />
+        <Link Id="LvMPHn5cLEQLmLDD1BM9BA" Ids="P5ialed5DoCNO4KvOOqCLZ,LxL4KmuVrbSPqLFgueunkc" />
+        <Link Id="UNfbw8tC9fXQSTcUZUrVDe" Ids="DFWp5e7tEk6MVPIp90w9T9,P5ialed5DoCNO4KvOOqCLZ" />
       </Patch>
     </Node>
   </Patch>

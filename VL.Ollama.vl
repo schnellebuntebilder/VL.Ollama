@@ -743,7 +743,7 @@
     ************************ Model ************************
 
 -->
-        <Node Name="Model" Bounds="172,490" Id="Q8qNTOK3WfHNtlkmRFbf2O">
+        <Node Name="Model" Bounds="172,453" Id="Q8qNTOK3WfHNtlkmRFbf2O">
           <p:NodeReference>
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <CategoryReference Kind="Category" Name="Primitive" />
@@ -1096,7 +1096,7 @@
     ************************ Details ************************
 
 -->
-        <Node Name="Details" Bounds="192,536" Id="Vww91dnVTImQNge7yS6efv">
+        <Node Name="Details" Bounds="192,499" Id="Vww91dnVTImQNge7yS6efv">
           <p:NodeReference>
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <CategoryReference Kind="Category" Name="Primitive" />
@@ -1715,7 +1715,7 @@
     ************************ ModelInfo ************************
 
 -->
-        <Node Name="ModelInfo" Bounds="192,582" Id="Cq6rkFSV458QUHuZSOtcY9">
+        <Node Name="ModelInfo" Bounds="192,545" Id="Cq6rkFSV458QUHuZSOtcY9">
           <p:NodeReference>
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <CategoryReference Kind="Category" Name="Primitive" />
@@ -2150,7 +2150,7 @@
     ************************ RunningModel ************************
 
 -->
-        <Node Name="RunningModel" Bounds="172,441" Id="A6e2ms6o26JMFKhm5JlViS">
+        <Node Name="RunningModel" Bounds="172,404" Id="A6e2ms6o26JMFKhm5JlViS">
           <p:NodeReference>
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <CategoryReference Kind="Category" Name="Primitive" />
@@ -2566,7 +2566,7 @@
             <ProcessDefinition Id="IGhZEI0e878QbKjiDRntVY" IsHidden="true" />
           </Patch>
         </Node>
-        <Pad Id="KTxofzuiUsiQCubNqRyMOT" Bounds="301,423,99,19" ShowValueBox="true" isIOBox="true" Value="&lt; Viewer inside">
+        <Pad Id="KTxofzuiUsiQCubNqRyMOT" Bounds="301,386,99,19" ShowValueBox="true" isIOBox="true" Value="&lt; Viewer inside">
           <p:TypeAnnotation>
             <Choice Kind="TypeFlag" Name="String" />
           </p:TypeAnnotation>
@@ -2575,7 +2575,7 @@
             <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
           </p:ValueBoxSettings>
         </Pad>
-        <Pad Id="NlIMAblxfaeMdPTJ4uEA8c" Bounds="253,473,99,19" ShowValueBox="true" isIOBox="true" Value="&lt; Viewer inside">
+        <Pad Id="NlIMAblxfaeMdPTJ4uEA8c" Bounds="253,436,99,19" ShowValueBox="true" isIOBox="true" Value="&lt; Viewer inside">
           <p:TypeAnnotation>
             <Choice Kind="TypeFlag" Name="String" />
           </p:TypeAnnotation>
@@ -2584,7 +2584,7 @@
             <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
           </p:ValueBoxSettings>
         </Pad>
-        <Pad Id="MmUdlAmlyjPMy2SBaBsUR0" Bounds="299,566,118,19" ShowValueBox="true" isIOBox="true" Value="&lt; ToString inside">
+        <Pad Id="MmUdlAmlyjPMy2SBaBsUR0" Bounds="299,529,118,19" ShowValueBox="true" isIOBox="true" Value="&lt; ToString inside">
           <p:TypeAnnotation>
             <Choice Kind="TypeFlag" Name="String" />
           </p:TypeAnnotation>
@@ -2593,6 +2593,220 @@
             <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
           </p:ValueBoxSettings>
         </Pad>
+        <!--
+
+    ************************ Message ************************
+
+-->
+        <Node Name="Message" Bounds="172,664" Id="Lzl8hIb8fXmPmnrJby58kw">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="OllamaSharp.Models.Chat" LastDependency="OllamaSharp.dll">
+            <Choice Kind="TypeFlag" Name="Message" />
+          </p:TypeAnnotation>
+          <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+          <Patch Id="IWaPDsLnaCmPNp1JXW60CT">
+            <Canvas Id="APDOVJdgXD8M4G3NDwLZq0" CanvasType="Group">
+              <!--
+
+    ************************ Create ************************
+
+-->
+              <Node Name="Create" Bounds="575,142,159,253" Id="BQBPvb7AKnYOBxhgKyIm4Q">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="IJhfv5opDcbNnnLaxjdrYP">
+                  <Node Bounds="597,349,47,26" AutoConnect="true" Id="PysAQTeayTuOEBdGvIRryi">
+                    <p:NodeReference LastCategoryFullName="OllamaSharp.Models.Chat.Message" LastDependency="OllamaSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="OllamaSharp.Models.Chat.Message" />
+                      <PinReference Kind="InputPin" Name="Role" />
+                      <PinReference Kind="InputPin" Name="Content" />
+                      <PinReference Kind="InputPin" Name="Images" />
+                    </p:NodeReference>
+                    <Pin Id="QJ0xDlLpaT9QaU80arGWOZ" Name="Role" Kind="InputPin" />
+                    <Pin Id="FxBlXQLSp2vNIh2roGxZ4y" Name="Content" Kind="InputPin" />
+                    <Pin Id="EaHYWmhBDBwLABZ9ecPcsp" Name="Images" Kind="InputPin" />
+                    <Pin Id="Jrpll8iaQSiPCuJvxNROT3" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="La8Oh0UgPpYOrmyFOYQVu9" Name="Role" Kind="InputPin" />
+                  <Pin Id="NnYRNSwiNbTOz4e0h2wjly" Name="Content" Kind="InputPin" />
+                  <Pin Id="D2ECmXCrD5LP5GXY4JR4vB" Name="Output" Kind="OutputPin" />
+                  <Node Bounds="627,201,84,86" Id="Qvubr0bnsWGLKHigUDGxR5">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                      <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      <CategoryReference Kind="Category" Name="Primitive" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                    </p:NodeReference>
+                    <Pin Id="NOSCqdERytCQPWFDXZ1Y1d" Name="Break" Kind="OutputPin" />
+                    <Patch Id="DKvJcQiJLwhN6N459Nxi0T" ManuallySortedPins="true">
+                      <Patch Id="Mq3SaajAbJ9LMSv6T959lS" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="DxfjfAdCRQcOJRuszpuYTA" Name="Update" ManuallySortedPins="true" />
+                      <Patch Id="LkiviBSk9nJLS3vPwLsvQK" Name="Dispose" ManuallySortedPins="true" />
+                      <Node Bounds="639,245,60,19" Id="TS4mwJ7wf8yLlkY2BPDwun">
+                        <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.Ollama_simple.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="ToBase64" />
+                        </p:NodeReference>
+                        <Pin Id="S9ggoxq4dVFO4ozuj6lXIQ" Name="Input" Kind="InputPin" />
+                        <Pin Id="NpDZKCBct8WM7wRvr2v6JW" Name="Result" Kind="OutputPin" />
+                      </Node>
+                    </Patch>
+                    <ControlPoint Id="Sd8OEiUsrYuPDEyqmhUxKJ" Bounds="641,281" Alignment="Bottom" />
+                    <ControlPoint Id="LfPz62fJkYFLdi2Z7ItzUQ" Bounds="641,207" Alignment="Top" />
+                  </Node>
+                  <Link Id="BXQKx3W5lb1LneGY9oBRio" Ids="NpDZKCBct8WM7wRvr2v6JW,Sd8OEiUsrYuPDEyqmhUxKJ" />
+                  <Node Bounds="639,304,83,26" Id="Rdz4uu1gX5UNPWUacfWbBL">
+                    <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ArrayType" Name="MutableArray" />
+                      <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    </p:NodeReference>
+                    <Pin Id="MbkDfOxcYiCLvF2o5M22zZ" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Q14NdvofHDFLGKa6OXqVTy" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="G2t1yTvGqJZMqGVGplHD1T" Ids="Sd8OEiUsrYuPDEyqmhUxKJ,MbkDfOxcYiCLvF2o5M22zZ" />
+                  <Link Id="JVPXnt4fBEiML7FAUGKDQn" Ids="Q14NdvofHDFLGKa6OXqVTy,EaHYWmhBDBwLABZ9ecPcsp" />
+                  <Link Id="Fa1jxcKqFCoNhRpzmPqfMa" Ids="LfPz62fJkYFLdi2Z7ItzUQ,S9ggoxq4dVFO4ozuj6lXIQ" />
+                  <ControlPoint Id="KCRnjNKCFlVNjAUU5VaK1M" Bounds="641,160" />
+                  <Link Id="GriyWLXrRgSMyEQvYG8gVu" Ids="KCRnjNKCFlVNjAUU5VaK1M,LfPz62fJkYFLdi2Z7ItzUQ" />
+                  <Pin Id="NLOIkXpVksFQMXdToiaURZ" Name="Images" Kind="InputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Spread" />
+                      <p:TypeArguments>
+                        <TypeReference>
+                          <Choice Kind="TypeFlag" Name="Path" />
+                        </TypeReference>
+                      </p:TypeArguments>
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="QjU2hJj6K0PMOPOd6VTms0" Ids="NLOIkXpVksFQMXdToiaURZ,KCRnjNKCFlVNjAUU5VaK1M" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="Ti9LAWPTcoVNUQS1RIwlB2" IsHidden="true">
+              <Fragment Id="Hn0Q4LYBvSVPxj4L0L8bLo" Patch="BQBPvb7AKnYOBxhgKyIm4Q" Enabled="true" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ChatRole ************************
+
+-->
+        <Node Name="ChatRole" Bounds="172,716" Id="BlUzw5pX0FKLw1SkilxIWi">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="OllamaSharp.Models.Chat" LastDependency="OllamaSharp.dll">
+            <Choice Kind="TypeFlag" Name="ChatRole" />
+          </p:TypeAnnotation>
+          <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+          <Patch Id="T55DUi2mLoBOUR5SrwdGT7">
+            <Canvas Id="MGvJO8eyOJYQK54EyjeTfq" CanvasType="Group">
+              <!--
+
+    ************************ Assistant ************************
+
+-->
+              <Node Name="Assistant" Bounds="361,124,112,82" Id="ItQlohMSAC3PysEXxEjHDo">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="D9TZyITKBvGP7WiBgj1zNB">
+                  <Node Bounds="373,156,58,19" AutoConnect="true" Id="PKSQdFXnMeAPUoKH4GzQW4">
+                    <p:NodeReference LastCategoryFullName="OllamaSharp.Models.Chat.ChatRole" LastDependency="OllamaSharp.dll">
+                      <Choice Kind="OperationNode" Name="Assistant" />
+                      <FullNameCategoryReference ID="OllamaSharp.Models.Chat.ChatRole" />
+                    </p:NodeReference>
+                    <Pin Id="UaAHJsf816fK9V7VM9UGzS" Name="Assistant" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="Uix0SY08dEANt0DZdamsB4" Name="Assistant" Kind="OutputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ System ************************
+
+-->
+              <Node Name="System" Bounds="638,124,116,82" Id="EJ6FvMfXHAsP7jxCIHWnyt">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="E7JbK9hjTwCMNOM8emuOhg">
+                  <Node Bounds="653,156,49,19" AutoConnect="true" Id="F3NYe8OP75tMsHg7asUQC7">
+                    <p:NodeReference LastCategoryFullName="OllamaSharp.Models.Chat.ChatRole" LastDependency="OllamaSharp.dll">
+                      <Choice Kind="OperationNode" Name="System" />
+                      <FullNameCategoryReference ID="OllamaSharp.Models.Chat.ChatRole" />
+                    </p:NodeReference>
+                    <Pin Id="MqKCD2smdeGL1IswhjC338" Name="System" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="ABynZ3eZ2BzPwJiu4D7W1D" Name="System" Kind="OutputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Tool ************************
+
+-->
+              <Node Name="Tool" Bounds="352,274,122,82" Id="JExZDOBtLgvNVoP3xRLGA8">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="DlI6WwYxxttLC9yCO4l9Ww">
+                  <Node Bounds="373,306,37,19" AutoConnect="true" Id="FZ7Aj40ldlFM6ig9mPmLHs">
+                    <p:NodeReference LastCategoryFullName="OllamaSharp.Models.Chat.ChatRole" LastDependency="OllamaSharp.dll">
+                      <Choice Kind="OperationNode" Name="Tool" />
+                      <FullNameCategoryReference ID="OllamaSharp.Models.Chat.ChatRole" />
+                    </p:NodeReference>
+                    <Pin Id="U8ki5G8lEAdNRcgl7hnpjJ" Name="Tool" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="UTz4hy0cTXKN1LLPFgsQy0" Name="Tool" Kind="OutputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ User ************************
+
+-->
+              <Node Name="User" Bounds="632,274,122,82" Id="E67EeKgQNV3MoDHAiHRU1K">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="MuKDYyZb63aLBiSANmeXt5">
+                  <Node Bounds="653,306,37,19" AutoConnect="true" Id="SwfGpCpDBcGMkoTMk93AxC">
+                    <p:NodeReference LastCategoryFullName="OllamaSharp.Models.Chat.ChatRole" LastDependency="OllamaSharp.dll">
+                      <Choice Kind="OperationNode" Name="User" />
+                      <FullNameCategoryReference ID="OllamaSharp.Models.Chat.ChatRole" />
+                    </p:NodeReference>
+                    <Pin Id="LnUnyu1whC0OHFM0ypY9X5" Name="User" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="LMCYXUhttLCPpYH1Uszqqj" Name="User" Kind="OutputPin" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="MbE66lpLLUtQWBk7El6hRW" IsHidden="true">
+              <Fragment Id="QYrB5oMw2SXM7kx5UmV8F8" Patch="ItQlohMSAC3PysEXxEjHDo" />
+              <Fragment Id="LvCXPPkYfcfPhTrQXrGJRS" Patch="EJ6FvMfXHAsP7jxCIHWnyt" />
+              <Fragment Id="OgvtUFpx1jMLdOZADI2ju8" Patch="JExZDOBtLgvNVoP3xRLGA8" />
+              <Fragment Id="NqnchqfF9XAM03IHManuTg" Patch="E67EeKgQNV3MoDHAiHRU1K" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
       </Canvas>
       <!--
 
@@ -3282,7 +3496,7 @@
           </p:NodeReference>
           <Patch Id="SSh7JI4NZIdOkYH9m2eHKo">
             <Canvas Id="JY0FLlvwUDvLV8xQc4A22O" CanvasType="Group">
-              <Node Bounds="264,198,102,234" Id="QVsKK5y0J65M5uvqcwfHyN">
+              <Node Bounds="264,198,270,386" Id="QVsKK5y0J65M5uvqcwfHyN">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -3330,7 +3544,7 @@
                     <Pin Id="STuUcQ70zWXPHxB4qeMsv3" Name="Input" Kind="InputPin" />
                     <Pin Id="Ah4YQASORiQMXFQ8VwDUG1" Name="Value" Kind="InputPin" />
                   </Node>
-                  <Node Bounds="276,383,74,26" Id="KwDPbFy7R6LPTkq2itJFIc">
+                  <Node Bounds="276,535,74,26" Id="KwDPbFy7R6LPTkq2itJFIc">
                     <p:NodeReference LastCategoryFullName="OllamaSharp.Chat" LastDependency="OllamaSharp.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <FullNameCategoryReference ID="OllamaSharp.Chat" />
@@ -3340,15 +3554,24 @@
                     <Pin Id="Nj2L6kkM2QzOp2OOf2DuQ1" Name="Value" Kind="InputPin" />
                     <Pin Id="JpdUwkCZASZNmDxMYnmuki" Name="Output" Kind="StateOutputPin" />
                   </Node>
+                  <Node Bounds="472,269,50,26" Id="IuyKtIS2H3pPMKxIepBPHC">
+                    <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToList" />
+                    </p:NodeReference>
+                    <Pin Id="PYTQK7WlezcQbKf995X506" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="TcoMtPyeciJMqEundiLMiy" Name="Result" Kind="OutputPin" />
+                  </Node>
                 </Patch>
-                <ControlPoint Id="VixrWE6j8iXMk619DSo6EV" Bounds="278,426" Alignment="Bottom" />
+                <ControlPoint Id="VixrWE6j8iXMk619DSo6EV" Bounds="278,578" Alignment="Bottom" />
                 <ControlPoint Id="Eb93fvi87PcMIuaXiTqKCa" Bounds="319,204" Alignment="Top" />
+                <ControlPoint Id="ONR7IxNuy80OlGoooEQZza" Bounds="507,204" Alignment="Top" />
               </Node>
               <ControlPoint Id="PUtdmMGackMPDrLcQP1XgB" Bounds="370,176" />
               <ControlPoint Id="H07d7CylpTPOiXwWrRuvUv" Bounds="319,138" />
-              <ControlPoint Id="L6BYG4ubLfROhU3viJ0x57" Bounds="278,676" />
+              <ControlPoint Id="L6BYG4ubLfROhU3viJ0x57" Bounds="278,828" />
               <ControlPoint Id="C6ae6G8O6y5Nx9aJcPyLdT" Bounds="266,170" />
-              <Node Bounds="276,487,109,26" Id="DThrvnBHQogOIBDZlME5iU">
+              <Node Bounds="276,639,109,26" Id="DThrvnBHQogOIBDZlME5iU">
                 <p:NodeReference LastCategoryFullName="OllamaSharp.Chat" LastDependency="OllamaSharp.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <FullNameCategoryReference ID="OllamaSharp.Chat" />
@@ -3358,8 +3581,8 @@
                 <Pin Id="BMWPXKvyNTUNZcgejZgM2B" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="LZLjgmoa6QUMdU4r1uSo0g" Name="Messages" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="FWYEYbMo4aANyn9yQmyOs4" Bounds="381,704" />
-              <Node Bounds="379,660,83,26" Id="DI9ydM02cSyPNwZvWY9Qbe">
+              <ControlPoint Id="FWYEYbMo4aANyn9yQmyOs4" Bounds="381,856" />
+              <Node Bounds="379,812,83,26" Id="DI9ydM02cSyPNwZvWY9Qbe">
                 <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
@@ -3368,7 +3591,7 @@
                 <Pin Id="Nlctrf3bN6SLcrlZba1s7T" Name="Input" Kind="StateInputPin" />
                 <Pin Id="LZ4g7opkpOPQBwGoDkdJV2" Name="Result" Kind="OutputPin" />
               </Node>
-              <Node Bounds="379,554,130,75" Id="PCbrHmbJctOM4RZJuYpjkr">
+              <Node Bounds="379,706,130,75" Id="PCbrHmbJctOM4RZJuYpjkr">
                 <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
@@ -3380,10 +3603,10 @@
                   <Pin Id="V5TZYwRqMooLKP7z6cDGvB" Name="Input 1" Kind="InputPin" />
                   <Pin Id="LFPn6obOo7gPSSfjxJjDf4" Name="Input 2" Kind="InputPin" />
                   <Pin Id="Q1QOY7cG7hxQFXJ4Qzlylb" Name="Result" Kind="OutputPin" />
-                  <ControlPoint Id="MDAOTnoBLgAN7fIpQXykmQ" Bounds="393,562" />
-                  <ControlPoint Id="OHImzOdCTmFO5GettkuqH2" Bounds="453,562" />
-                  <ControlPoint Id="BNhGZVkz9ldNq1pqKf0avd" Bounds="440,622" />
-                  <Node Bounds="391,579,52,26" Id="UXbtF27GH0SLA85oukBf99">
+                  <ControlPoint Id="MDAOTnoBLgAN7fIpQXykmQ" Bounds="393,714" />
+                  <ControlPoint Id="OHImzOdCTmFO5GettkuqH2" Bounds="453,714" />
+                  <ControlPoint Id="BNhGZVkz9ldNq1pqKf0avd" Bounds="440,774" />
+                  <Node Bounds="391,731,52,26" Id="UXbtF27GH0SLA85oukBf99">
                     <p:NodeReference LastCategoryFullName="OllamaSharp.Models.Chat.Message" LastDependency="OllamaSharp.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <FullNameCategoryReference ID="OllamaSharp.Models.Chat.Message" />
@@ -3395,6 +3618,7 @@
                   </Node>
                 </Patch>
               </Node>
+              <ControlPoint Id="GUH4g8U7IuhLCyxJHulr5z" Bounds="507,135" />
             </Canvas>
             <Patch Id="EKnrUwDMQbvPgs4DnZFu1C" Name="Create" />
             <Patch Id="TyCGLLFKdGAOUfBXUQZbO2" Name="Update">
@@ -3403,6 +3627,7 @@
               <Pin Id="PZwI4pvAQiCNmfSHefVw8j" Name="Model" Kind="InputPin" DefaultValue="llama3.2-vision" />
               <Pin Id="RZTWK5qYBETLPZrHeBbhfb" Name="Output" Kind="OutputPin" />
               <Pin Id="GxygpXjYPJPNPFz5BaZJ7s" Name="Messages" Kind="OutputPin" />
+              <Pin Id="CpZvIzaVjXVPjsqSskFSsk" Name="Messages" Kind="InputPin" />
             </Patch>
             <ProcessDefinition Id="K2BZbV7Lpj0PLCudYMuFoH">
               <Fragment Id="Np2kaK4537wMUTivrPEkfd" Patch="EKnrUwDMQbvPgs4DnZFu1C" Enabled="true" />
@@ -3431,6 +3656,10 @@
             <Link Id="DlkckezARvtOj087Z3BJ2r" Ids="MDAOTnoBLgAN7fIpQXykmQ,DikIDtsDr9LOTLa8TWa5ks" />
             <Link Id="QUhHwgNM93ROq4IhXft6lH" Ids="S3TTJFVqLxaLzJ0twob9Fq,BNhGZVkz9ldNq1pqKf0avd" />
             <Link Id="Ds7HY6cLhhlNgE5TuYkxKu" Ids="Hsb30Ekz78oPYNG9ay5JmV,Nlctrf3bN6SLcrlZba1s7T" />
+            <Link Id="UbKxfP0oVGdPCjgCy0TRmt" Ids="GUH4g8U7IuhLCyxJHulr5z,ONR7IxNuy80OlGoooEQZza" />
+            <Link Id="RUbhF4GuqIEMLHaHNERF2X" Ids="CpZvIzaVjXVPjsqSskFSsk,GUH4g8U7IuhLCyxJHulr5z" IsHidden="true" />
+            <Link Id="Do5mnzTMD16N1DYJhHGQRf" Ids="ONR7IxNuy80OlGoooEQZza,PYTQK7WlezcQbKf995X506" />
+            <Link Id="CIqqaUTPl91LNDbCu4ChfK" Ids="TcoMtPyeciJMqEundiLMiy,Nj2L6kkM2QzOp2OOf2DuQ1" />
           </Patch>
         </Node>
         <!--
