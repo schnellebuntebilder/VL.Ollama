@@ -247,7 +247,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Overlay Id="CaAVqj7YjdpOmxaGiBU1SC" Name="Configuration" Bounds="179,153,802,276">
+          <Overlay Id="CaAVqj7YjdpOmxaGiBU1SC" Name="Configuration" Bounds="179,153,1301,276">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <Pad Id="GxKwPIH1RjINIcVb4Ny12y" Bounds="244,315,312,19" ShowValueBox="true" isIOBox="true" Value="https://ollama.com/download/OllamaSetup.exe">
@@ -316,7 +316,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="ULgskAygyWSPWpRstV1Itm" Name="Chat" Bounds="175,1325,914,1206" />
-          <Pad Id="GnjCfTvOFmnN5PL9EihJd3" Bounds="1113,201,518,29" ShowValueBox="true" isIOBox="true" Value="https://github.com/ollama/ollama/blob/main/docs/gpu.md">
+          <Pad Id="GnjCfTvOFmnN5PL9EihJd3" Bounds="1072,103,518,29" ShowValueBox="true" isIOBox="true" Value="https://github.com/ollama/ollama/blob/main/docs/gpu.md">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -325,7 +325,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PnSREVhczeiPfOSdl7oqrU" Bounds="1113,174,118,19" ShowValueBox="true" isIOBox="true" Value="GPU support table:">
+          <Pad Id="PnSREVhczeiPfOSdl7oqrU" Bounds="1072,76,118,19" ShowValueBox="true" isIOBox="true" Value="GPU support table:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -501,7 +501,7 @@
             <ControlPoint Id="A8IIJUdi2gxPIEA4ckcsnG" Bounds="598,2821" Alignment="Bottom" />
             <ControlPoint Id="A2DxjYBa2H2MXBM8VnfC8X" Bounds="548,2821" Alignment="Bottom" />
           </Node>
-          <Pad Id="IuXVIEdcCeGPIOVHXwPPVC" Comment="Model" Bounds="1052,2818,80,15" ShowValueBox="true" isIOBox="true" Value="llama3.2-vision">
+          <Pad Id="IuXVIEdcCeGPIOVHXwPPVC" Comment="Model" Bounds="1052,2818,80,15" ShowValueBox="true" isIOBox="true" Value="llama3.2:1b">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -610,6 +610,37 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
+          <Node Bounds="1055,243,69,19" Id="GMPCeW9yjbqOcMreIjb0Qn">
+            <p:NodeReference LastCategoryFullName="Ollama.Utils" LastDependency="VL.Ollama.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="StartOllama" />
+            </p:NodeReference>
+            <Pin Id="CsuLMWheQdaLwP4Mh6uEOm" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JBR9QPNIqBtP9ifw6tfe5D" Name="Execute" Kind="InputPin" />
+            <Pin Id="H2aXKcw06KZOy7vMnYujpv" Name="Output" Kind="OutputPin" />
+            <Pin Id="FurogEc1wcvOy7azwFULTe" Name="Clear Output" Kind="InputPin" />
+          </Node>
+          <Pad Id="E2ZfElPOMsLQUFCu0IHrCC" Comment="Execute" Bounds="1057,170,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ia5CV0lcoGBOJRb3lXp3Ri" Comment="Clear Output" Bounds="1121,202,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Hw4AJttOtGkNgGHU04iR3J" Comment="" Bounds="1057,290,404,138" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">4</p:fontsize>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="T0xVaLPDzQiLj6XlK56JVi" Name="Create" ParticipatingElements="CDKLvm7JhcOO0UvvoBQodv" />
         <Patch Id="TpScSvZU9HLNvKhf54aONK" Name="Update" />
@@ -684,6 +715,9 @@
         <Link Id="U2tK3Xjc9loLP5HufwMYyU" Ids="TJrS96c0pe9LPgH7X46V7s,S9VR8VJ4AXFPOb6dw6ASIq" />
         <Link Id="G2AB751AqqLLLPXFXxssKA" Ids="AJqCazlom75K94uvEuKrz0,QK6p3dcjq3KOwBdtI2t6Js" />
         <Link Id="LenamrmqR48Ock8GZzNNLc" Ids="Hj1eEXeZ2hzLJY8FD4h16M,KzzpVwOpbfCLRWHX7nP6Ft" />
+        <Link Id="OWV4I7IJ3KtMcRUp3tHzrr" Ids="E2ZfElPOMsLQUFCu0IHrCC,JBR9QPNIqBtP9ifw6tfe5D" />
+        <Link Id="ERE6QLs9lyaNYrZOeMkK0C" Ids="Ia5CV0lcoGBOJRb3lXp3Ri,FurogEc1wcvOy7azwFULTe" />
+        <Link Id="RiO0eFjXHYJOGByZdEypT7" Ids="H2aXKcw06KZOy7vMnYujpv,Hw4AJttOtGkNgGHU04iR3J" />
       </Patch>
     </Node>
   </Patch>
