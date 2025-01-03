@@ -130,7 +130,8 @@ public static class OllamaApiClientExtensions
     /// <param name="context">The conversation context.</param>
     /// <param name="onResponse">The action to perform on each response stream.</param>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A Task of a list of string responses.</returns>    public static Task<List<string>> GenerateAsync(IOllamaApiClient client, string prompt, ConversationContext context, Action<string?> onResponse, CancellationToken cancellationToken = default)
+    /// <returns>A Task of a list of string responses.</returns>
+    public static Task<List<string>> GenerateAsync(IOllamaApiClient client, string prompt, ConversationContext context, Action<string?> onResponse, CancellationToken cancellationToken = default)
     {
         return Task.Run(async () =>
         {

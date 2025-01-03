@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GC8z1JXhkXjMAdxKeBRCn6" LanguageVersion="2024.6.7-0235-g5172ef47fd" Version="0.128">
-  <NugetDependency Id="DvlEjDdQ3sPL7Fn0q0s3ck" Location="VL.CoreLib" Version="2024.6.7-0235-g5172ef47fd" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GC8z1JXhkXjMAdxKeBRCn6" LanguageVersion="2024.6.7-0310-g6266ca42c1" Version="0.128">
+  <NugetDependency Id="DvlEjDdQ3sPL7Fn0q0s3ck" Location="VL.CoreLib" Version="2024.6.7-0310-g6266ca42c1" />
   <Patch Id="L5srcNfREgwPQW1NnzcExI">
     <Canvas Id="EujIE7Y2JThMOcNVTzuF6J" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -183,7 +183,7 @@
           <Pad Id="OGiebQ7hCcTNQqQmgeimZb" Comment="Done" Bounds="690,1503,35,35" ShowValueBox="true" isIOBox="true" />
           <Overlay Id="RajhFwtpJHtO0u6o0H1Cj0" Name="Manage Models" Bounds="176,1259,2119,789" />
           <Pad Id="DNl84fnTI6rMZj7G1LFG3v" Comment="streaming response" Bounds="370,2934,546,141" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="HKOYg4QDZtcN7q6XFtyGUg" Comment="Model" Bounds="665,2475,80,15" ShowValueBox="true" isIOBox="true" Value="llama3.2:1b">
+          <Pad Id="HKOYg4QDZtcN7q6XFtyGUg" Comment="Model" Bounds="665,2475,80,15" ShowValueBox="true" isIOBox="true" Value="llama3.2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -587,7 +587,7 @@
           <Pad Id="K2H8tyhf3y6OUsBdnx3PFF" Comment="Is Running" Bounds="1427,2635,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="LSqJmkmwELxNjXlA6cBYtC" Comment="Duration" Bounds="1460,2604,35,15" ShowValueBox="true" isIOBox="true" />
           <Overlay Id="QNgZEU9xhnKOrbAcYhcdif" Name="Image Chat Example" Bounds="1147,2162,781,668" />
-          <Pad Id="Hj1eEXeZ2hzLJY8FD4h16M" Comment="Model" Bounds="1026,1336,109,15" ShowValueBox="true" isIOBox="true" Value="llama3.2:1b">
+          <Pad Id="Hj1eEXeZ2hzLJY8FD4h16M" Comment="Model" Bounds="1026,1336,109,15" ShowValueBox="true" isIOBox="true" Value="llama3.2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -625,7 +625,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Hw4AJttOtGkNgGHU04iR3J" Comment="" Bounds="246,507,925,272" ShowValueBox="true" isIOBox="true">
+          <Pad Id="Hw4AJttOtGkNgGHU04iR3J" Comment="" Bounds="246,511,925,275" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">4</p:fontsize>
             </p:ValueBoxSettings>
@@ -949,7 +949,6 @@
         <Link Id="OWV4I7IJ3KtMcRUp3tHzrr" Ids="E2ZfElPOMsLQUFCu0IHrCC,JBR9QPNIqBtP9ifw6tfe5D" />
         <Link Id="ERE6QLs9lyaNYrZOeMkK0C" Ids="Ia5CV0lcoGBOJRb3lXp3Ri,FurogEc1wcvOy7azwFULTe" />
         <Link Id="RiO0eFjXHYJOGByZdEypT7" Ids="H2aXKcw06KZOy7vMnYujpv,Hw4AJttOtGkNgGHU04iR3J" />
-        <Link Id="Tka9fRrmOOLLn4JwfoJura" Ids="MfVOXYX9iKELVIN8HQx3xm,KzzpVwOpbfCLRWHX7nP6Ft" />
         <Link Id="KofiaHPLyyzOPUfXVjwJhc" Ids="HKOYg4QDZtcN7q6XFtyGUg,TLOuTpiWsjGO8OK0schhW1" />
         <Link Id="HTWmAJr4qPsORHCPTv6Jli" Ids="K0z83I3cGotQAfwdehEDAK,TX0TVijVr8EOOvpLMHBkOP" />
         <Link Id="TUvKZvjmHkVOH1Dgvt1Nqa" Ids="EktOJYP3H0VNMS6NXd7NJu,VmEWpZohXqpNEf7esRWlwt" />
@@ -964,10 +963,11 @@
         <Link Id="IKkKWCqoQzIQBpdGTgf9Cl" Ids="Dr96ALrRskROHOlj2x66mn,RsUam4NIXLuOPhnJ6WGWko" />
         <Link Id="DUE9KbZAeK4ME8GyAZrdKJ" Ids="QvHFmlxTINuNeUVq6BeJ6G,JM7vZqIJcVDLN1HQ0r8StU" />
         <Link Id="GP6n9WAzrh5PMwGHwsMvTt" Ids="EpfMb7DIC1SMwGs5o6k7r1,SGUEP3aAUSfMA8hEC0OfVb" />
+        <Link Id="AcU73w5PTPHQLKu8m9KhJd" Ids="Hj1eEXeZ2hzLJY8FD4h16M,KzzpVwOpbfCLRWHX7nP6Ft" />
       </Patch>
     </Node>
   </Patch>
   <DocumentDependency Id="Ec2pvvPv5bJNXHD6HdM8oI" Location="../VL.Ollama.vl" />
-  <NugetDependency Id="P4mLnbjI7fNPArg1sodvxX" Location="VL.Skia" Version="2024.6.7-0235-g5172ef47fd" />
-  <NugetDependency Id="EdNBViyRzzPLdT7gNaFDAy" Location="OllamaSharp" Version="4.0.7" />
+  <NugetDependency Id="P4mLnbjI7fNPArg1sodvxX" Location="VL.Skia" Version="2024.6.7-0310-g6266ca42c1" />
+  <NugetDependency Id="EdNBViyRzzPLdT7gNaFDAy" Location="OllamaSharp" Version="4.0.17" />
 </Document>

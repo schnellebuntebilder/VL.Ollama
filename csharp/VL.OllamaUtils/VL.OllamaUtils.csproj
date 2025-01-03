@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OllamaSharp" Version="4.0.7" />
+    <PackageReference Include="OllamaSharp" Version="4.0.17" />
     <PackageReference Include="System.Linq.Async" Version="6.0.1" />
-    <PackageReference Include="VL.Core" Version="2024.6.7-0235-g5172ef47fd" />
+    <PackageReference Include="VL.Core" Version="2024.6.7-0310-g6266ca42c1" />
 	<PackageReference Include="System.Reactive" Version="6.0.1" />
   </ItemGroup>
 

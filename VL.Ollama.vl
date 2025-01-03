@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="B4pPG7zbeT8NWjG6u0eeHp" LanguageVersion="2024.6.7-0235-g5172ef47fd" Version="0.128">
-  <NugetDependency Id="AcOLZYZYamWQYuSfSFhZf5" Location="VL.CoreLib" Version="2024.6.7-0235-g5172ef47fd" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="B4pPG7zbeT8NWjG6u0eeHp" LanguageVersion="2024.6.7-0310-g6266ca42c1" Version="0.128">
+  <NugetDependency Id="AcOLZYZYamWQYuSfSFhZf5" Location="VL.CoreLib" Version="2024.6.7-0310-g6266ca42c1" />
   <Patch Id="LANBuHR7bSjMaxulmc5iYp">
     <Canvas Id="IXgdwgl4nK1L8YCevqgoRR" DefaultCategory="Ollama" CanvasType="FullCategory">
       <Canvas Id="QZhLZRMPOuCNZOIGW28AYn" Name="Utils" Position="97,517">
@@ -439,6 +439,7 @@
                       <Pin Id="QYJWfngSD5jLY7XdKXAFL6" Name="Font2" Kind="OutputPin" />
                       <Pin Id="SlJ7HlPfUFsLjAD3iUTS5o" Name="Font3" Kind="OutputPin" />
                       <Pin Id="L7RbjLOV4BQPUw71d01SuV" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="IuIo8bCeUp7Naq2hNNbU1X" Name="Spacer Paint" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="471,736,52,19" Id="EHo6gNzsdPJQLLlaK2HSvC">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -474,6 +475,7 @@
                       <Pin Id="UlbgoDMONZSLx9Rac1WSKM" Name="Center Ellipsis" Kind="InputPin" />
                       <Pin Id="SclQBSzVwIKQAROoPJvDOA" Name="Paint" Kind="InputPin" />
                       <Pin Id="KIOgC1jAOc7PNHeyWrzBzc" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="QalXaduvMmiLif03U1Hl3u" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="829,535,68,19" Id="KvJvmtRZP3ULhqUMi6JoHC">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -489,6 +491,7 @@
                       <Pin Id="FrJ3ubwbaEZNVFV8DARvsl" Name="Center Ellipsis" Kind="InputPin" />
                       <Pin Id="OhsOsgGKOhIM8sb8CMij8T" Name="Paint" Kind="InputPin" />
                       <Pin Id="GRh4XIbCUbPNWv3mTv0Vng" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="DOFF6SosjDmM7c4TKbnF0d" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="656,625,35,19" Id="KfjOWYOX4oJMsqXQhA1Iaq">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -519,6 +522,7 @@
                       <Pin Id="A0c2kRHJwKXN36780jO1kc" Name="Center Ellipsis" Kind="InputPin" />
                       <Pin Id="KcX40l6vL39NHQ04aL4ZC3" Name="Paint" Kind="InputPin" />
                       <Pin Id="QD6iQzWWW0NLCstBnwrN1Z" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="SlRuYyquZpHN1SW9dW3leK" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="471,811,145,19" Id="MGATkCg97MYOjudOO9jBDU">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -1846,6 +1850,7 @@
                       <Pin Id="R8BN5kw7TjhMuPWE5JWDhe" Name="Font2" Kind="OutputPin" />
                       <Pin Id="EmfJ8rmmkFrOQwIoorYW1S" Name="Font3" Kind="OutputPin" />
                       <Pin Id="HwpFjTzQWN4NwFEJXawl6u" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="T96xX2lGmtvPXK35NVY4S4" Name="Spacer Paint" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="471,736,52,19" Id="CeiERU2FJlwMfGAxopcn72">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -1881,6 +1886,7 @@
                       <Pin Id="FRezKelyBmUN7VxhYiuadU" Name="Center Ellipsis" Kind="InputPin" />
                       <Pin Id="Nv7q2VkC4qsMbXodvBrrG4" Name="Paint" Kind="InputPin" />
                       <Pin Id="Cl4ur6PKmS1PEigv5MG2Sq" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="ANFrvFz1vOELqsfCsGnaDg" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="829,535,68,19" Id="Ly9IHiRGSjqNKEsPde8XYj">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -1896,6 +1902,7 @@
                       <Pin Id="USqIp4tmN2ZPjJzIzv4axK" Name="Center Ellipsis" Kind="InputPin" />
                       <Pin Id="G5Tab0FcWZ0PwPTSxDRrHx" Name="Paint" Kind="InputPin" />
                       <Pin Id="PDeYn1qwpFrMESTYrlRpn4" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="J5ptUAen9yMMlbciAlJFYi" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="656,625,35,19" Id="Mg33PzQ0yZsLE5oByo7QZ5">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -1926,6 +1933,7 @@
                       <Pin Id="PkZ5PalmpKZNj8deqkH0IE" Name="Center Ellipsis" Kind="InputPin" />
                       <Pin Id="QtagJcMkardQEPnV2pbrNf" Name="Paint" Kind="InputPin" />
                       <Pin Id="BtfYF8WPOWYLzV89ct82bK" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="Fu35AablKBfOIyMxkphvEL" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="471,811,145,19" Id="JyMFUMMBTBCLbMnaMh8zvL">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -4375,10 +4383,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UYyH2GqI35FNi8s13e6SWE" Location="VL.Skia" Version="2024.6.7-0235-g5172ef47fd" />
+  <NugetDependency Id="UYyH2GqI35FNi8s13e6SWE" Location="VL.Skia" Version="2024.6.7-0310-g6266ca42c1" />
   <PlatformDependency Id="VeLaTCmjXZYMpxKBq1QAUX" Location="System.Runtime" />
-  <NugetDependency Id="FOPVYokMpqYOUAPxkl9LvG" Location="VL.HDE" Version="2024.6.7-0235-g5172ef47fd" />
+  <NugetDependency Id="FOPVYokMpqYOUAPxkl9LvG" Location="VL.HDE" Version="2024.6.7-0310-g6266ca42c1" />
   <ProjectDependency Id="RSUUg2OjyeuLeqzRUbVO8n" Location="./csharp/VL.OllamaUtils/VL.OllamaUtils.csproj" />
   <PlatformDependency Id="I8zuHWkjoCIOIC7NK6CibQ" Location="mscorlib" />
-  <NugetDependency Id="LS37n3h6WeNNWOg6YrOxcC" Location="OllamaSharp" Version="4.0.7" />
+  <NugetDependency Id="LS37n3h6WeNNWOg6YrOxcC" Location="OllamaSharp" Version="4.0.17" />
 </Document>
