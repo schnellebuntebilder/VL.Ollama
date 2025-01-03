@@ -43,7 +43,7 @@ jobs:
       if: ${{ github.event.inputs.deploy == 'true' }}
       uses: vvvv/PublishVLNuget@1.0.43
       with:
-        nuspec: deployment\VL.RichTextKit.nuspec
+        nuspec: deployment\VL.Ollama.nuspec
         version: ${{ github.event.inputs.buildnumberMaj }}.${{ github.event.inputs.buildnumber }}.${{ github.event.inputs.buildnumberMin }}
         
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
