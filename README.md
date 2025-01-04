@@ -1,5 +1,5 @@
 # VL.Ollama
-VL Wrapper for OllamaSharp
+VL Wrapper for [OllamaSharp](https://github.com/awaescher/OllamaSharp)
 
 instal dependencies via ```nuget install ollamasharp -version 4.0.7 -pre```
 
