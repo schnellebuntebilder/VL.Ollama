@@ -13,19 +13,13 @@ using OllamaSharp.Models.Chat;
 
 
 /// <summary>
-/// This is a class with extension methods for the OllamaApiClient class.
-/// This is a way to add new methods to existing classes, without modifying the original class.
-/// This is useful when you don't have access to the original source code, or when you want to keep the original class clean.
-/// This class is static, so it can't be instantiated, and its methods can be called directly on the class.
-/// Extension methods can be used like regular methods on the original class, but they are defined in a separate class.
-/// This class is in the same namespace as the OllamaApiClient class, so it can access its public members.
+/// Provides extension methods for OllamaApiClient.
 /// </summary>
 public static class OllamaApiClientExtensions
 {
 
     /// <summary>
-    /// This is an extension method for the DeleteModelAsync method of the OllamaApiClient class.
-    /// It takes a model name as a parameter and deletes the model.
+    /// Extension method for DeleteModelAsync, deletes a model.
     /// </summary>
     /// <param name="client">The OllamaApiClient instance.</param>
     /// <param name="model">The model name.</param>
@@ -40,8 +34,7 @@ public static class OllamaApiClientExtensions
     }
 
     /// <summary>
-    /// This is an extension method for the PullModelAsync method of the OllamaApiClient class.
-    /// It takes a model name as a parameter and writes the status to the console.
+    /// Extension method for PullModelAsync, prints status.
     /// </summary>
     /// <param name="client">The OllamaApiClient instance.</param>
     /// <param name="model">The model name.</param>
@@ -130,7 +123,8 @@ public static class OllamaApiClientExtensions
     /// <param name="context">The conversation context.</param>
     /// <param name="onResponse">The action to perform on each response stream.</param>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A Task of a list of string responses.</returns>    public static Task<List<string>> GenerateAsync(IOllamaApiClient client, string prompt, ConversationContext context, Action<string?> onResponse, CancellationToken cancellationToken = default)
+    /// <returns>A Task of a list of string responses.</returns>
+    public static Task<List<string>> GenerateAsync(IOllamaApiClient client, string prompt, ConversationContext context, Action<string?> onResponse, CancellationToken cancellationToken = default)
     {
         return Task.Run(async () =>
         {
