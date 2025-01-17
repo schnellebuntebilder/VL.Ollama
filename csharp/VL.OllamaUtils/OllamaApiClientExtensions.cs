@@ -1,6 +1,3 @@
-// For examples, see:
-// https://thegraybook.vvvv.org/reference/extending/writing-nodes.html#examples
-
 using System;
 using System.Net;
 using System.Reactive.Linq;

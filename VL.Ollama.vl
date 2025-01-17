@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Document xmlns:p="property" xmlns:r="reflection" Id="B4pPG7zbeT8NWjG6u0eeHp" LanguageVersion="2025.7.0-0005-gfd21b8f14a" Version="0.128">
-  <NugetDependency Id="AcOLZYZYamWQYuSfSFhZf5" Location="VL.CoreLib" Version="2024.6.7-0310-g6266ca42c1" />
+  <NugetDependency Id="AcOLZYZYamWQYuSfSFhZf5" Location="VL.CoreLib" Version="2025.7.0-0005-gfd21b8f14a" />
   <Patch Id="LANBuHR7bSjMaxulmc5iYp">
     <Canvas Id="IXgdwgl4nK1L8YCevqgoRR" DefaultCategory="Ollama" CanvasType="FullCategory">
       <Canvas Id="QZhLZRMPOuCNZOIGW28AYn" Name="Utils" Position="97,517">
@@ -274,7 +274,7 @@
           <Link Id="Emvi9tRKiOCLXQRo7CBC7D" Ids="S2cuWlGwXNEN2mQlAE1upe,MAYJdelGTYGLB0r2yEsJZl" />
         </Patch>
       </Node>
-      <Canvas Id="D6xFoh0GY7qNbeTvJvWikh" Name="Model" Position="97,389" CanvasType="Group">
+      <Canvas Id="D6xFoh0GY7qNbeTvJvWikh" Name="Model" Position="98,389" CanvasType="Group">
         <!--
 
     ************************ ListModels ************************
@@ -443,7 +443,6 @@
                       <Pin Id="SlJ7HlPfUFsLjAD3iUTS5o" Name="Font3" Kind="OutputPin" />
                       <Pin Id="L7RbjLOV4BQPUw71d01SuV" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="IuIo8bCeUp7Naq2hNNbU1X" Name="Spacer Paint" Kind="OutputPin" />
-                      <Pin Id="SufRfdN5Dz7Ps1JUzq9ppm" Name="Spacer Paint" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="471,736,52,19" Id="EHo6gNzsdPJQLLlaK2HSvC">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -480,7 +479,6 @@
                       <Pin Id="SclQBSzVwIKQAROoPJvDOA" Name="Paint" Kind="InputPin" />
                       <Pin Id="KIOgC1jAOc7PNHeyWrzBzc" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="QalXaduvMmiLif03U1Hl3u" Name="Horizontal Alignment" Kind="InputPin" />
-                      <Pin Id="R2CFhqGWHc7QbftMTFWXUV" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="829,535,68,19" Id="KvJvmtRZP3ULhqUMi6JoHC">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -497,7 +495,6 @@
                       <Pin Id="OhsOsgGKOhIM8sb8CMij8T" Name="Paint" Kind="InputPin" />
                       <Pin Id="GRh4XIbCUbPNWv3mTv0Vng" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="DOFF6SosjDmM7c4TKbnF0d" Name="Horizontal Alignment" Kind="InputPin" />
-                      <Pin Id="DyTVseN7VyhP7qsfqkLOnm" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="656,625,35,19" Id="KfjOWYOX4oJMsqXQhA1Iaq">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -529,7 +526,6 @@
                       <Pin Id="KcX40l6vL39NHQ04aL4ZC3" Name="Paint" Kind="InputPin" />
                       <Pin Id="QD6iQzWWW0NLCstBnwrN1Z" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="SlRuYyquZpHN1SW9dW3leK" Name="Horizontal Alignment" Kind="InputPin" />
-                      <Pin Id="FHTRpf6iZOWORr20dzkv0X" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="471,811,145,19" Id="MGATkCg97MYOjudOO9jBDU">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -1901,7 +1897,6 @@
                       <Pin Id="EmfJ8rmmkFrOQwIoorYW1S" Name="Font3" Kind="OutputPin" />
                       <Pin Id="HwpFjTzQWN4NwFEJXawl6u" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="T96xX2lGmtvPXK35NVY4S4" Name="Spacer Paint" Kind="OutputPin" />
-                      <Pin Id="Gxy7WcEUScdPWGzL7amm5G" Name="Spacer Paint" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="471,736,52,19" Id="CeiERU2FJlwMfGAxopcn72">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -1938,7 +1933,6 @@
                       <Pin Id="Nv7q2VkC4qsMbXodvBrrG4" Name="Paint" Kind="InputPin" />
                       <Pin Id="Cl4ur6PKmS1PEigv5MG2Sq" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="ANFrvFz1vOELqsfCsGnaDg" Name="Horizontal Alignment" Kind="InputPin" />
-                      <Pin Id="OTehXD2eDYWMPWhvdy6g10" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="829,535,68,19" Id="Ly9IHiRGSjqNKEsPde8XYj">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -1955,7 +1949,6 @@
                       <Pin Id="G5Tab0FcWZ0PwPTSxDRrHx" Name="Paint" Kind="InputPin" />
                       <Pin Id="PDeYn1qwpFrMESTYrlRpn4" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="J5ptUAen9yMMlbciAlJFYi" Name="Horizontal Alignment" Kind="InputPin" />
-                      <Pin Id="V2a0tTYM53MLs3gBG9tACX" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="656,625,35,19" Id="Mg33PzQ0yZsLE5oByo7QZ5">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -1987,7 +1980,6 @@
                       <Pin Id="QtagJcMkardQEPnV2pbrNf" Name="Paint" Kind="InputPin" />
                       <Pin Id="BtfYF8WPOWYLzV89ct82bK" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="Fu35AablKBfOIyMxkphvEL" Name="Horizontal Alignment" Kind="InputPin" />
-                      <Pin Id="VdkNjfEkphmNAekUiSvrM5" Name="Horizontal Alignment" Kind="InputPin" />
                     </Node>
                     <Node Bounds="471,811,145,19" Id="JyMFUMMBTBCLbMnaMh8zvL">
                       <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="HDE.WidgetsAndViewers.vl">
@@ -2778,7 +2770,7 @@
                   </Node>
                 </Patch>
               </Node>
-              <ControlPoint Id="VA3GZijqfDsP0nnxtzBqKo" Bounds="586,213" />
+              <ControlPoint Id="VA3GZijqfDsP0nnxtzBqKo" Bounds="826,209" />
               <ControlPoint Id="Rz92YiDEzXYPgxfyhXBsJz" Bounds="637,213" />
               <Node Bounds="404,1041,65,19" Id="ETJddwlivzzLztsksDlaMr">
                 <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
@@ -2872,12 +2864,11 @@
                 <Pin Id="TOdrtxcRTdYPdltcQxK7ZL" Name="E" Kind="InputPin" />
                 <Pin Id="FS067oaa45OQClevrcI3Nz" Name="C" Kind="InputPin" />
               </Node>
-              <ControlPoint Id="ShBEoRDgxKEMUW2C7d79ez" Bounds="466,1023" />
+              <ControlPoint Id="ShBEoRDgxKEMUW2C7d79ez" Bounds="797,989" />
             </Canvas>
             <Patch Id="AQRsns24UImOlq5CRrQwym" Name="Create" ParticipatingElements="KGquKrbhxwUMKbEmOZo6BN" />
             <Patch Id="NsQLWZWsq0gQYbEW01Ycyg" Name="Update">
               <Pin Id="RGZIy1SKHKOPRGm5kv0PBD" Name="Chat" Kind="InputPin" />
-              <Pin Id="IwKK4UdMSZBPrRbPSNqYG5" Name="Start" Kind="InputPin" />
               <Pin Id="Vbq8YtDICcpLy9CYuaK8N0" Name="Message" Kind="InputPin" />
               <Pin Id="DoeEuE3RLqKMAcfD9NAhWQ" Name="image" Kind="InputPin" />
               <Pin Id="LZb48VWw5hhLYrC71IKGEb" Name="Cancel" Kind="InputPin" Visibility="Optional" />
@@ -2885,6 +2876,7 @@
               <Pin Id="OWhRePZKuqDQA4zD83pR4Z" Name="streaming response" Kind="OutputPin" />
               <Pin Id="RNJrLVuGirGOX7sUygeqvY" Name="Is Running" Kind="OutputPin" Visibility="Optional" />
               <Pin Id="EyCsXPHo0BjMxrw7sj6wmC" Name="Duration" Kind="OutputPin" Visibility="Optional" />
+              <Pin Id="IwKK4UdMSZBPrRbPSNqYG5" Name="Start" Kind="InputPin" />
             </Patch>
             <ProcessDefinition Id="Tv7V4TO8a4wQNjVXfyqGjz">
               <Fragment Id="T3thLWhylj1PcMOR9Qj947" Patch="AQRsns24UImOlq5CRrQwym" Enabled="true" />
@@ -4491,10 +4483,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UYyH2GqI35FNi8s13e6SWE" Location="VL.Skia" Version="2024.6.7-0310-g6266ca42c1" />
+  <NugetDependency Id="UYyH2GqI35FNi8s13e6SWE" Location="VL.Skia" Version="2025.7.0-0005-gfd21b8f14a" />
   <PlatformDependency Id="VeLaTCmjXZYMpxKBq1QAUX" Location="System.Runtime" />
-  <NugetDependency Id="FOPVYokMpqYOUAPxkl9LvG" Location="VL.HDE" Version="2024.6.7-0310-g6266ca42c1" />
+  <NugetDependency Id="FOPVYokMpqYOUAPxkl9LvG" Location="VL.HDE" Version="2025.7.0-0005-gfd21b8f14a" />
   <ProjectDependency Id="RSUUg2OjyeuLeqzRUbVO8n" Location="./csharp/VL.OllamaUtils/VL.OllamaUtils.csproj" />
   <PlatformDependency Id="I8zuHWkjoCIOIC7NK6CibQ" Location="mscorlib" />
-  <NugetDependency Id="LS37n3h6WeNNWOg6YrOxcC" Location="OllamaSharp" Version="4.0.17" />
+  <NugetDependency Id="Lz6LNF9k2TMOfVLJipk1wm" Location="OllamaSharp" Version="5.0.2" />
 </Document>

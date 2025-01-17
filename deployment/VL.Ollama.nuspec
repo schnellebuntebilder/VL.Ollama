@@ -15,7 +15,7 @@
     <icon>icon\nugeticon.png</icon>
     <readme>docs\README.md</readme>
     <dependencies>
-        <dependency id="OllamaSharp" version="4.0.17" />
+        <dependency id="OllamaSharp" version="5.0.2" />
     </dependencies>
   </metadata>
   <files>
