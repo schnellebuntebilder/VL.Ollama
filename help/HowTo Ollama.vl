@@ -397,7 +397,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="P5VBie67qCYPbUPdfnVDKt" Comment="Prompt" Bounds="987,3458,165,40" ShowValueBox="true" isIOBox="true" Value="tell me a joke">
+          <Pad Id="P5VBie67qCYPbUPdfnVDKt" Comment="Prompt" Bounds="987,3458,165,40" ShowValueBox="true" isIOBox="true" Value="transcribe the text in the image">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -437,7 +437,7 @@
           <Pad Id="PzzDRXGhV0hODK6nuaEGwx" Comment="Duration" Bounds="964,3779,50,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="QHl5ILlKkCcMn7u81ehnyx" Comment="Is Running" Bounds="944,3799,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="S2HNYwq4PGzLyN3KNpDQma" Comment="streaming response" Bounds="924,3844,361,33" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="JmtHwiXQbbpNjFDp5okFbt" Comment="" Bounds="904,3886,379,177" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JmtHwiXQbbpNjFDp5okFbt" Comment="" Bounds="904,3886,456,217" ShowValueBox="true" isIOBox="true" />
           <Pad Id="PLGLlCu4tUjPPQXmL3PuEO" Comment="Stream" Bounds="1008,3505,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -993,6 +993,7 @@
         <Link Id="JnpxgcwEW6CLRenEZTTEiD" Ids="A2nPPXO1BTPNB5BZjT9d63,TVRf9IiblXSP4XJMMxQCis" />
         <Link Id="Eip8kFAwybSLsALvPhfahn" Ids="O9vJaJQkRiEMhnmnb1BptX,LrgXlySU7aUQdhRKjdpOiP" />
         <Link Id="CKS1GAbiSJwOjx1PF9v1kR" Ids="S95Lpjjo5EaO8Nmfu1gtiY,KlHlRmDJlcBMeGDqDnTLvr" />
+        <Link Id="NEsMNb81sfeNIVjys0fkKu" Ids="RgoyvDUoe3gMfNIF3PMbwv,ALikt0H1sIhP8RSOL3d8S6" />
       </Patch>
     </Node>
   </Patch>
