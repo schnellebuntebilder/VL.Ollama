@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="B4pPG7zbeT8NWjG6u0eeHp" LanguageVersion="2025.7.0-0005-gfd21b8f14a" Version="0.128">
-  <NugetDependency Id="AcOLZYZYamWQYuSfSFhZf5" Location="VL.CoreLib" Version="2025.7.0-0005-gfd21b8f14a" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="B4pPG7zbeT8NWjG6u0eeHp" LanguageVersion="2025.7.0-0051-gad452c3779" Version="0.128">
+  <NugetDependency Id="AcOLZYZYamWQYuSfSFhZf5" Location="VL.CoreLib" Version="2025.7.0-0051-gad452c3779" />
   <Patch Id="LANBuHR7bSjMaxulmc5iYp">
     <Canvas Id="IXgdwgl4nK1L8YCevqgoRR" DefaultCategory="Ollama" CanvasType="FullCategory">
       <Canvas Id="QZhLZRMPOuCNZOIGW28AYn" Name="Utils" Position="97,517">
@@ -780,7 +780,7 @@
           </p:NodeReference>
           <Patch Id="Ovik5nbi8FfMEit8NgawVP">
             <Canvas Id="RhbXUvUQGP0QK1zvXbGvVm" CanvasType="Group">
-              <Node Bounds="300,462,229,229" Id="T35PWCT13VHL8SniqcQlJq">
+              <Node Bounds="300,441,229,250" Id="T35PWCT13VHL8SniqcQlJq">
                 <p:NodeReference LastCategoryFullName="Reactive.Task" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="ManageTask" />
@@ -833,7 +833,7 @@
                       </Node>
                     </Patch>
                   </Node>
-                  <Node Bounds="360,485,78,19" Id="FvhpL8ECINSM4G7ozmTgNS">
+                  <Node Bounds="360,464,78,19" Id="FvhpL8ECINSM4G7ozmTgNS">
                     <p:NodeReference LastCategoryFullName="Ollama" LastDependency="VL.Ollama.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="OllamaConfig" />
@@ -3736,12 +3736,31 @@
                 <Pin Id="NO4qNkDue24PPqUEyLR7D8" Name="Value" Kind="InputPin" />
                 <Pin Id="QwsbZdmayLlMO4GRH2ITHR" Name="Output" Kind="StateOutputPin" />
               </Node>
+              <Node Bounds="658,520,77,26" Id="TjEj3mEmU7eM23SWg3J4Vr">
+                <p:NodeReference LastCategoryFullName="OllamaSharp.Models.GenerateRequest" LastDependency="OllamaSharp.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="GenerateRequest" NeedsToBeDirectParent="true" />
+                  <AssemblyReference ID="OllamaSharp.dll" />
+                  <Choice Kind="OperationCallFlag" Name="SetFormat" />
+                </p:NodeReference>
+                <Pin Id="Mrgii6BBx2rMlTZPzOmkRc" Name="Input" Kind="StateInputPin" />
+                <Pin Id="UubEVKGZTBhMvR9r79mxUi" Name="Value" Kind="InputPin" />
+                <Pin Id="LTNEQ9J2BQcQcD7QebkCXO" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="Nupy0gsgYErOF6r7kpoX41" Name="Apply" Kind="InputPin" />
+              </Node>
+              <Pad Id="ANx20pWQWqINqd1nJano8x" Bounds="707,498,35,15" ShowValueBox="true" isIOBox="true" Value="json">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="ImmutableTypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <ControlPoint Id="QPEwBMEP7syOsyEK57ZjzG" Bounds="725,468" />
             </Canvas>
             <Patch Id="LvtTxeteZ1qO7600gNn82f" Name="Create" ParticipatingElements="RBZYi6xzp5aPoDZsidE3YA" />
             <Patch Id="QcL2GF3fYrkLLkMRrQzTLa" Name="Set" ParticipatingElements="AOK776Wb2clK9eYltjSCA3">
               <Pin Id="M8Gtl5YkqPDQUXqN779qOT" Name="ImagePaths" Kind="InputPin" />
               <Pin Id="FSV8Ag1bY7kPGAinkTSCt3" Name="Prompt" Kind="InputPin" />
               <Pin Id="JCxmafVSju6MjvhZLdQFI4" Name="Stream" Kind="InputPin" />
+              <Pin Id="VrFyQhTVPTJP77wU47I6Eo" Name="respond as json" Kind="InputPin" />
               <Pin Id="C7ycSs5grALOCvabweRC5o" Name="Model" Kind="InputPin" />
             </Patch>
             <Slot Id="VNgkoE0yiKlQMv8o1sI8mT" Name="g" />
@@ -3774,6 +3793,10 @@
             <Link Id="AOK776Wb2clK9eYltjSCA3" Ids="UqQCpyaAQzPOsiBy5bdvzJ,STJiGohiqpqNPAMWP3KJPq" />
             <Link Id="NWo4BTZK9ydPrhLBbPGn6b" Ids="F1T45QwDPP7MW2oovdCu4C,NO4qNkDue24PPqUEyLR7D8" />
             <Link Id="KqscYHXeTuxPIq01Ws85c0" Ids="VQSfJ4vcEeqNcprhxueGtF,F1T45QwDPP7MW2oovdCu4C" />
+            <Link Id="K5mht9ApZMmOw7zENlGJEF" Ids="ANx20pWQWqINqd1nJano8x,UubEVKGZTBhMvR9r79mxUi" />
+            <Link Id="PbaxKUmdlDIMTDyOLstqDs" Ids="QwsbZdmayLlMO4GRH2ITHR,Mrgii6BBx2rMlTZPzOmkRc" />
+            <Link Id="N0T08ctH9NOP0QZvXm5XdL" Ids="QPEwBMEP7syOsyEK57ZjzG,Nupy0gsgYErOF6r7kpoX41" />
+            <Link Id="GxVN5p9Q4KOPB96d4uCAEu" Ids="VrFyQhTVPTJP77wU47I6Eo,QPEwBMEP7syOsyEK57ZjzG" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -4031,6 +4054,127 @@
           <Patch Id="ApEp3danpv0MnVOi2MEk75">
             <Canvas Id="Jh5ukVeGljjL7FtrnmxDEf" CanvasType="Group" />
             <ProcessDefinition Id="GuDEL7tsctkOweCQIl2Mug" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ RequestOptions ************************
+
+-->
+        <Node Name="RequestOptions" Bounds="383,384" Id="HWsJWzWt0DgPKYbW8ikNcM">
+          <p:NodeReference>
+            <Choice Kind="ContainerDefinition" />
+          </p:NodeReference>
+          <Patch Id="IQQIx6TNUZdOybYrqlueOh">
+            <Canvas Id="LYPTI7bWvrEPCCoj4lsBf7" CanvasType="Group">
+              <ControlPoint Id="GZ0mndRcb3zOanhcW15p23" Bounds="321,139" />
+              <ControlPoint Id="DldRYDHajEBO7QFA4bzdy5" Bounds="321,477" />
+              <Node Bounds="284,175,227,270" Id="Q3cJcK2v8VXNwyxabpVswR">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                </p:NodeReference>
+                <Pin Id="GbGGQie8HzXMojfPrHWMnt" Name="Force" Kind="InputPin" />
+                <Pin Id="PSGxvjSydenPSv5O1rCTSA" Name="Dispose Cached Outputs" Kind="InputPin" />
+                <Pin Id="KHtXRTHe5CMOUBLeY9N1kl" Name="Has Changed" Kind="OutputPin" />
+                <Patch Id="FEv1l5i84KiOrEDzKa6pED" ManuallySortedPins="true">
+                  <Patch Id="TkwNhlxST3CPXiiSpPlpWF" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="PaSbkj84r74MDcwwTpGKXN" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="307,237,166,188" Id="MTULCoblDbtMDPY91hSu63">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                      <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      <CategoryReference Kind="Category" Name="Primitive" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                    </p:NodeReference>
+                    <Pin Id="Ely2UzOJpaYLoUDwtHA0UT" Name="Condition" Kind="InputPin" />
+                    <Patch Id="RrGsmHiWgLRN8fsWWrL71l" ManuallySortedPins="true">
+                      <Patch Id="HcgW9DfO9MHLpztvr0XmCN" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="M2Ezene3sqgPK2uyfJT4Bu" Name="Then" ManuallySortedPins="true" />
+                      <Node Bounds="388,308,73,26" Id="RjVskHaheMrOhcZ5J2NB9h">
+                        <p:NodeReference LastCategoryFullName="OllamaSharp.Models.RequestOptions" LastDependency="OllamaSharp.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="AssemblyCategory" Name="RequestOptions" />
+                          <Choice Kind="OperationCallFlag" Name="SetLogitsAll" />
+                        </p:NodeReference>
+                        <Pin Id="Q3SoMrkvy6PLJb6uEuSpC9" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="HSMwaBbhsfSN2t785Lmbh8" Name="Value" Kind="InputPin" />
+                        <Pin Id="B2tBJ0PxrgvQGhVmdbxI9o" Name="Output" Kind="StateOutputPin" />
+                      </Node>
+                      <Node Bounds="319,353,77,26" Id="PQP8Z4x9rh7OQGieDtKxFO">
+                        <p:NodeReference LastCategoryFullName="OllamaSharp.Models.GenerateRequest" LastDependency="OllamaSharp.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="AssemblyCategory" Name="GenerateRequest" NeedsToBeDirectParent="true" />
+                          <Choice Kind="OperationCallFlag" Name="SetOptions" />
+                        </p:NodeReference>
+                        <Pin Id="TSGh80ogslmLrHCp54gBmr" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="LEpRGRlk1ekPvGl1PLIOFY" Name="Value" Kind="InputPin" />
+                        <Pin Id="Vnz85NRTrSjMuzeqSWrqCu" Name="Output" Kind="StateOutputPin" />
+                      </Node>
+                      <Node Bounds="387,260,73,26" Id="PnBaVBOlitGPqDK5Kftv7X">
+                        <p:NodeReference LastCategoryFullName="OllamaSharp.Models.RequestOptions" LastDependency="OllamaSharp.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="AssemblyCategory" Name="RequestOptions" />
+                          <Choice Kind="OperationCallFlag" Name="Create" />
+                        </p:NodeReference>
+                        <Pin Id="DRkIQk9pVUYMIxBoTaZ7KK" Name="Output" Kind="StateOutputPin" />
+                      </Node>
+                    </Patch>
+                    <ControlPoint Id="IXQo5ZREGVNN6mIlSakBsT" Bounds="321,243" Alignment="Top" />
+                    <ControlPoint Id="DdzEVSVMtXVMbUTyNKBdcX" Bounds="321,419" Alignment="Bottom" />
+                  </Node>
+                  <Node Bounds="301,204,65,19" Id="AJVVRtOPSWnQC2DfgMIl85">
+                    <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <FullNameCategoryReference ID="Primitive.Object" />
+                      <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                    </p:NodeReference>
+                    <Pin Id="EPvCVdH1ouZQM6UglpyOdD" Name="X" Kind="InputPin" />
+                    <Pin Id="UgBwXRols4UNWVUPWnMroY" Name="Result" Kind="OutputPin" />
+                    <Pin Id="DKrRrIxe655QICZA1DOTgr" Name="Not Assigned" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="STaYVH5wPOyOgAziIR0MYQ" Bounds="321,181" Alignment="Top" />
+                <ControlPoint Id="ACA9biEGBA0LqKY2cOTedi" Bounds="321,439" Alignment="Bottom" />
+                <ControlPoint Id="DTuPv1eJja8O2RUVqYTpXE" Bounds="496,181" Alignment="Top" />
+              </Node>
+              <ControlPoint Id="T7R2dQgl0J2NyDG3K5NYwi" Bounds="496,134" />
+            </Canvas>
+            <Patch Id="GSB64KOIE1FOZb2q3MKnFT" Name="Create" />
+            <Patch Id="TtPz3N13RskLQjJtbK1udi" Name="Update">
+              <Pin Id="Sy33Nb6HtsoMvKiV1v411E" Name="Input" Kind="InputPin" />
+              <Pin Id="R8JEHt1jqyxOM4R72CojHo" Name="Output" Kind="OutputPin" />
+              <Pin Id="B56yLfR9iwSL3VQV5drhuU" Name="Logits" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <!--
+
+    ************************  ************************
+
+-->
+            <ProcessDefinition Id="RK63Zh7oeXpL1a7L25CdfM">
+              <Fragment Id="Sv819dtWV8qLSj6rtdElve" Patch="GSB64KOIE1FOZb2q3MKnFT" Enabled="true" />
+              <Fragment Id="Lp42kQdpv59MWS7mSn5yIp" Patch="TtPz3N13RskLQjJtbK1udi" Enabled="true" />
+            </ProcessDefinition>
+            <Link Id="QMZUAULdOHWPQrClAQZJLZ" Ids="Sy33Nb6HtsoMvKiV1v411E,GZ0mndRcb3zOanhcW15p23" IsHidden="true" />
+            <Link Id="BYOGNub4oNQMe3qvzfrfi5" Ids="DldRYDHajEBO7QFA4bzdy5,R8JEHt1jqyxOM4R72CojHo" IsHidden="true" />
+            <Link Id="OJoufbJwtEwMlr0NNjK4QG" Ids="GZ0mndRcb3zOanhcW15p23,STaYVH5wPOyOgAziIR0MYQ" />
+            <Link Id="R8qWIpb5JzCMugOaq1zqRb" Ids="ACA9biEGBA0LqKY2cOTedi,DldRYDHajEBO7QFA4bzdy5" />
+            <Link Id="B8ZswWvQRy7NkxFAs7GJm9" Ids="DTuPv1eJja8O2RUVqYTpXE,HSMwaBbhsfSN2t785Lmbh8" />
+            <Link Id="OG4ozgtImSIOHVq8bNyn2E" Ids="T7R2dQgl0J2NyDG3K5NYwi,DTuPv1eJja8O2RUVqYTpXE" />
+            <Link Id="P5xnqOSHf8jOSNc31wVGnT" Ids="B56yLfR9iwSL3VQV5drhuU,T7R2dQgl0J2NyDG3K5NYwi" IsHidden="true" />
+            <Link Id="OjPfdnzDUMQLzwM6xPgPDZ" Ids="B2tBJ0PxrgvQGhVmdbxI9o,LEpRGRlk1ekPvGl1PLIOFY" />
+            <Link Id="SJck9oMht4PN3TGto8PXe8" Ids="DRkIQk9pVUYMIxBoTaZ7KK,Q3SoMrkvy6PLJb6uEuSpC9" />
+            <Link Id="E3Y6x9ciZ39QPBbpIoB5oX" Ids="STaYVH5wPOyOgAziIR0MYQ,EPvCVdH1ouZQM6UglpyOdD" />
+            <Link Id="IviY3qR5ugDO58AjPLEShx" Ids="UgBwXRols4UNWVUPWnMroY,Ely2UzOJpaYLoUDwtHA0UT" />
+            <Link Id="LSAVtcu1y58QNiSzzGVhUJ" Ids="IXQo5ZREGVNN6mIlSakBsT,DdzEVSVMtXVMbUTyNKBdcX" IsFeedback="true" />
+            <Link Id="Nib25SkDgTNLJaGOZxwlYj" Ids="STaYVH5wPOyOgAziIR0MYQ,IXQo5ZREGVNN6mIlSakBsT" />
+            <Link Id="RIfqrF8fmX5O2Bio2xNwEe" Ids="Vnz85NRTrSjMuzeqSWrqCu,DdzEVSVMtXVMbUTyNKBdcX" />
+            <Link Id="E5ySOEmhuVbMraSGHPR8X2" Ids="DdzEVSVMtXVMbUTyNKBdcX,ACA9biEGBA0LqKY2cOTedi" />
+            <Link Id="RQ3ABel2ymtM1vOYA6rW4S" Ids="IXQo5ZREGVNN6mIlSakBsT,TSGh80ogslmLrHCp54gBmr" />
           </Patch>
         </Node>
       </Canvas>
@@ -4483,10 +4627,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UYyH2GqI35FNi8s13e6SWE" Location="VL.Skia" Version="2025.7.0-0005-gfd21b8f14a" />
+  <NugetDependency Id="UYyH2GqI35FNi8s13e6SWE" Location="VL.Skia" Version="2025.7.0-0051-gad452c3779" />
   <PlatformDependency Id="VeLaTCmjXZYMpxKBq1QAUX" Location="System.Runtime" />
-  <NugetDependency Id="FOPVYokMpqYOUAPxkl9LvG" Location="VL.HDE" Version="2025.7.0-0005-gfd21b8f14a" />
+  <NugetDependency Id="FOPVYokMpqYOUAPxkl9LvG" Location="VL.HDE" Version="2025.7.0-0051-gad452c3779" />
   <ProjectDependency Id="RSUUg2OjyeuLeqzRUbVO8n" Location="./csharp/VL.OllamaUtils/VL.OllamaUtils.csproj" />
   <PlatformDependency Id="I8zuHWkjoCIOIC7NK6CibQ" Location="mscorlib" />
-  <NugetDependency Id="Lz6LNF9k2TMOfVLJipk1wm" Location="OllamaSharp" Version="5.0.2" />
+  <NugetDependency Id="FRKUnab1wMUPbLtTTuFH0l" Location="OllamaSharp" Version="5.0.5" />
 </Document>
